@@ -1,30 +1,46 @@
 .body-index {
   width: 100%;
   display: grid;
-  grid-template-areas: "header-i" "main-i" "footer-i"; }
+  grid-template-areas: "header-i" "main-i" "footer-i";
+  background: #ffde00;
+  background: linear-gradient(0deg, #eeb714 24%, #f5ff00 99%); }
 
-header {
-  grid-area: header-i;
-  background-color: #FFC300;
+.body-inicio {
   width: 100%;
-  position: fixed;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center; }
-  header img {
-    width: 20%; }
-  header nav {
+  display: grid;
+  grid-template-areas: "header-i" "txt" "main" "footer-o";
+  gap: 12rem;
+  background: #ffde00;
+  background: linear-gradient(0deg, #eeb714 24%, #f5ff00 99%); }
+
+@media screen and (min-width: 765px) {
+  .header-index {
+    grid-area: header-i;
+    background-color: #FFC300;
+    width: 100%;
+    position: fixed;
     display: flex;
-    flex-flow: row-reverse nowrap; }
-    header nav ul {
-      width: 40%;
-      list-style-type: none;
+    flex-flow: row nowrap;
+    justify-content: center;
+    z-index: 3; }
+    .header-index img {
+      width: 16%; }
+    .header-index nav {
       display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      justify-content: space-around; }
-      header nav ul li {
-        color: red; }
+      flex-flow: row-reverse nowrap; }
+      .header-index nav ul {
+        width: 40%;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around; }
+        .header-index nav ul li {
+          color: red; }
+        .header-index nav ul .btn-header {
+          background-color: #FFC300;
+          color: black;
+          border: 2px solid black; } }
 
 .main-index {
   grid-area: main-i;
@@ -54,13 +70,98 @@ header {
     .main-index .buscador ion-icon {
       padding: 1%;
       font-size: 230%;
-      color: #fff;
-      border: 4px solid #FFC300;
+      color: #FFC300;
+      border: 4px solid black;
       border-radius: 1rem;
-      color: #FFC300; }
+      color: black; }
     .main-index .buscador .boton-buscador {
       background-color: #FFC300;
       border: 2px solid black; }
+
+.texto-opciones {
+  grid-area: txt;
+  display: flex;
+  flex-flow: column nowrap; }
+  .texto-opciones .texto-opciones-1 {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: flex-start; }
+    .texto-opciones .texto-opciones-1 h1 {
+      margin-left: 5%;
+      padding: 2%; }
+  .texto-opciones .texto-opciones-2 {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: flex-end; }
+    .texto-opciones .texto-opciones-2 h2 {
+      margin-right: 10%;
+      padding: 1%; }
+
+.main-inicio {
+  grid-area: main;
+  margin-left: 10%;
+  display: grid;
+  grid-template-areas: "ca-1 ca-2" "ca-3 ca-4";
+  gap: 2%; }
+  .main-inicio .card1 {
+    grid-area: ca-1;
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #46dc2e;
+    border-radius: 1rem;
+    background-color: #46dc2e; }
+    .main-inicio .card1 img {
+      width: 50%; }
+  .main-inicio .card2 {
+    grid-area: ca-2;
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #46dc2e;
+    border-radius: 1rem; }
+    .main-inicio .card2 img {
+      width: 50%; }
+  .main-inicio .card3 {
+    grid-area: ca-3;
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #46dc2e;
+    border-radius: 1rem; }
+    .main-inicio .card3 img {
+      width: 50%; }
+  .main-inicio .card4 {
+    grid-area: ca-4;
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #46dc2e;
+    border-radius: 1rem; }
+    .main-inicio .card4 img {
+      width: 50%; }
+
+.footer-inicio {
+  grid-area: footer-o;
+  margin-top: 5rem; }
 
 .footer-index {
   grid-area: footer-i;
