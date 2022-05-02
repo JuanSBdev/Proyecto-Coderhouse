@@ -133,8 +133,8 @@
 
 
 .main-about{
-    padding-top: 5%;
-    margin-top: -5%;
+    padding-top: 15%;
+    margin-top: 0%;
     background-color: rgb(255, 255, 255);
     grid-area: main-a;
     display: flex;
@@ -143,6 +143,11 @@
     .main-title{
         align-self:flex-end;
         margin-right: 10%;
+            -webkit-animation: swing 1s ease;
+                        animation: swing 3s ease;
+                        -webkit-animation-iteration-count: 10;
+                        animation-iteration-count: 2;   
+        
 
     }
     .section-1-about{
@@ -153,6 +158,7 @@
         align-items: center;
         justify-content: center;
         background-color: $color-principal;
+        
         img{
             width: 60%;
             padding: 10%;
