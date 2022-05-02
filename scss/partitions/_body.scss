@@ -25,3 +25,12 @@
     
 
 }
+.body-about{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header-i"
+    "main-a"
+    "footer-a";
+    gap: 12rem;
+
+}

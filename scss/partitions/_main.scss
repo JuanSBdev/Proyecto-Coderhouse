@@ -76,7 +76,6 @@
         grid-template-areas: "ca-1 ca-2"
         "ca-3 ca-4";
         gap: 2%;
-    
     .card1{
         grid-area: ca-1;
         width: 70%;
@@ -86,7 +85,7 @@
         position: relative;
         align-items: center;
         align-content: center;      
-        border: 2px solid $color-2;
+        border: 2px solid #45dc2e84;
         border-radius: 1rem; 
         background-color: $color-2;
   
@@ -106,6 +105,8 @@
         align-content: center;
         border: 2px solid $color-2;
         border-radius: 1rem; 
+        background-color: $color-2;
+
         img{
             width: 50%;
         }
@@ -122,6 +123,8 @@
         align-content: center;        
         border: 2px solid $color-2;
         border-radius: 1rem; 
+        background-color: $color-2;
+
 
         img{
             width: 50%;
@@ -139,6 +142,8 @@
         align-content: center;       
         border: 2px solid $color-2;
         border-radius: 1rem; 
+        background-color: $color-2;
+
  
         img{
             width: 50%;
@@ -153,3 +158,80 @@
     grid-area: footer-o;
     margin-top: 5rem;
 }
+
+
+.main-about{
+    padding-top: 5%;
+    margin-top: -5%;
+    background-color: rgb(255, 255, 255);
+    grid-area: main-a;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    .main-title{
+        align-self:flex-end;
+        margin-right: 10%;
+
+    }
+    .section-1-about{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-principal;
+        img{
+            width: 60%;
+            padding: 10%;
+            border-radius: 1rem;
+        }
+    }
+    .section-2-about{
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        img{
+            width: 60%;
+            padding: 10%;
+            border-radius: 1rem;
+        }
+    }
+    .section-3-about{
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: $color-principal;
+        
+  
+
+}
+}
+.footer-about{
+    grid-area: footer-a;
+    width: 100%;
+    margin-bottom: 6%;
+    background-color: $color-principal;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    h3{
+        margin-top: 2% ;
+    }
+    .footer-about-contact{
+        padding: 2%;
+        display: flex;
+                flex-flow: row nowrap;        
+                justify-content: space-evenly;
+        img{
+                width: 10%;
+            }
+
+    }
+   
+    
+    }

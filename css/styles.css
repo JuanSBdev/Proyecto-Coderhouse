@@ -13,6 +13,12 @@
   background: #ffde00;
   background: linear-gradient(0deg, #eeb714 24%, #f5ff00 99%); }
 
+.body-about {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header-i" "main-a" "footer-a";
+  gap: 12rem; }
+
 @media screen and (min-width: 765px) {
   .header-index {
     grid-area: header-i;
@@ -114,7 +120,7 @@
     position: relative;
     align-items: center;
     align-content: center;
-    border: 2px solid #46dc2e;
+    border: 2px solid #45dc2e84;
     border-radius: 1rem;
     background-color: #46dc2e; }
     .main-inicio .card1 img {
@@ -129,7 +135,8 @@
     align-items: center;
     align-content: center;
     border: 2px solid #46dc2e;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    background-color: #46dc2e; }
     .main-inicio .card2 img {
       width: 50%; }
   .main-inicio .card3 {
@@ -142,7 +149,8 @@
     align-items: center;
     align-content: center;
     border: 2px solid #46dc2e;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    background-color: #46dc2e; }
     .main-inicio .card3 img {
       width: 50%; }
   .main-inicio .card4 {
@@ -155,13 +163,73 @@
     align-items: center;
     align-content: center;
     border: 2px solid #46dc2e;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    background-color: #46dc2e; }
     .main-inicio .card4 img {
       width: 50%; }
 
 .footer-inicio {
   grid-area: footer-o;
   margin-top: 5rem; }
+
+.main-about {
+  padding-top: 5%;
+  margin-top: -5%;
+  background-color: white;
+  grid-area: main-a;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center; }
+  .main-about .main-title {
+    align-self: flex-end;
+    margin-right: 10%; }
+  .main-about .section-1-about {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC300; }
+    .main-about .section-1-about img {
+      width: 60%;
+      padding: 10%;
+      border-radius: 1rem; }
+  .main-about .section-2-about {
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; }
+    .main-about .section-2-about img {
+      width: 60%;
+      padding: 10%;
+      border-radius: 1rem; }
+  .main-about .section-3-about {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #FFC300; }
+
+.footer-about {
+  grid-area: footer-a;
+  width: 100%;
+  margin-bottom: 6%;
+  background-color: #FFC300;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center; }
+  .footer-about h3 {
+    margin-top: 2%; }
+  .footer-about .footer-about-contact {
+    padding: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly; }
+    .footer-about .footer-about-contact img {
+      width: 10%; }
 
 .footer-index {
   grid-area: footer-i;
