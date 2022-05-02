@@ -45,11 +45,13 @@
 
     .main-inicio{
         grid-area: main;
-        margin-left: 10%;
+        padding-left: 10%;
         display: grid;
         grid-template-areas: "ca-1 ca-2"
         "ca-3 ca-4";
         gap: 2%;
+        background-color: #fff;
+
     .card1{
         grid-area: ca-1;
         width: 70%;
@@ -59,9 +61,9 @@
         position: relative;
         align-items: center;
         align-content: center;      
-        border: 2px solid #45dc2e84;
+        border: 2px solid #564f1d84;
         border-radius: 1rem; 
-        background-color: $color-2;
+        background-color: yellow;
             img{
                 width: 50%;
             }
@@ -78,7 +80,7 @@
         align-content: center;
         border: 2px solid $color-2;
         border-radius: 1rem; 
-        background-color: $color-2;
+        background-color: rgba(236, 75, 17, 0.645);
 
         img{
             width: 50%;
@@ -115,7 +117,7 @@
         align-content: center;       
         border: 2px solid $color-2;
         border-radius: 1rem; 
-        background-color: $color-2;
+        background-color: rgba(98, 201, 226, 0.942);
 
  
         img{
@@ -185,7 +187,7 @@
     grid-template-areas: "productos pagos";
     width: 100%;
     .section-form-pagos{ 
-        margin-top: 6rem;
+        margin-top: 16%;
         grid-area: pagos;
         width: 100%;
         display: flex;
@@ -195,10 +197,10 @@
         align-content: flex-end;
 
         img{
-            width: 50%;
+            width: 70%;
         }
         h2{
-            color: red;
+            color: $color-principal;
             font-size: 5rem;
         }
         form {
@@ -250,7 +252,7 @@
         width: 20%;
     }
         h2{
-            color: red;
+            color:$color-principal;
             font-size: 5rem;
         }
         ul{
@@ -259,7 +261,7 @@
             justify-content: center;
             gap: 1rem;
             li{
-                padding-left: 10rem;
+                padding-left: 10%;
                 display:flex ;
                 flex-flow: column nowrap;
                 justify-content: center;
@@ -271,15 +273,15 @@
                     justify-content: center;
                     align-content: center;
                     align-items: center;
-                    background-color:#942a2a;
-                    border: 12px solid #d26439;
+                    background-color:$color-principal;
+                    border: 2px solid $color-2;
                     border-radius: 2rem;
                     text-decoration: none;
-                    color: yellow;
-                    &:hover{
+                    color: #fff;
+                        &:hover{
                         transform: scale(1.1);
 
-                    }
+                        }
                 }
             }
         }

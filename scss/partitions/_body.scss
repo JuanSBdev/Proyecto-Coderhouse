@@ -1,5 +1,40 @@
-    
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+}
+
 .body-index{
+    
     width: 100%;
     display: grid;
     grid-template-areas:
@@ -8,9 +43,7 @@
     "footer-i";
     background: rgb(255,222,0);
     background: linear-gradient(0deg, rgb(238, 183, 20) 24%, rgba(245,255,0,1) 99%);
-    
 
-}
 .body-inicio{
     width: 100%;
     display: grid;
@@ -41,4 +74,5 @@
     "contenido"
     "footer-2";
     width: 100%;
+}
 }

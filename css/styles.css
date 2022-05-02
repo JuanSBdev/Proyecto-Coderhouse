@@ -1,28 +1,45 @@
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px); }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px); }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px); }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
 .body-index {
   width: 100%;
   display: grid;
   grid-template-areas: "header-i" "main-i" "footer-i";
   background: #ffde00;
   background: linear-gradient(0deg, #eeb714 24%, #f5ff00 99%); }
-
-.body-inicio {
-  width: 100%;
-  display: grid;
-  grid-template-areas: "header-i" "txt" "main" "footer-o";
-  gap: 12rem;
-  background: #ffde00;
-  background: linear-gradient(0deg, #eeb714 24%, #f5ff00 99%); }
-
-.body-about {
-  width: 100%;
-  display: grid;
-  grid-template-areas: "header-i" "main-a" "footer-a";
-  gap: 12rem; }
-
-.body-pagos {
-  display: grid;
-  grid-template-areas: "header-i" "contenido" "footer-2";
-  width: 100%; }
+  .body-index .body-inicio {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header-i" "txt" "main" "footer-o";
+    gap: 12rem;
+    background: #ffde00;
+    background: linear-gradient(0deg, #eeb714 24%, #f5ff00 99%); }
+  .body-index .body-about {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header-i" "main-a" "footer-a";
+    gap: 12rem; }
+  .body-index .body-pagos {
+    display: grid;
+    grid-template-areas: "header-i" "contenido" "footer-2";
+    width: 100%; }
 
 .header-index {
   grid-area: header-i;
@@ -45,8 +62,11 @@
       flex-flow: row nowrap;
       align-items: center;
       justify-content: space-around; }
-      .header-index nav ul li {
-        color: red; }
+      .header-index nav ul li a:hover {
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
       .header-index nav ul .btn-header {
         background-color: #FFC300;
         color: black;
@@ -90,10 +110,11 @@
 
 .main-inicio {
   grid-area: main;
-  margin-left: 10%;
+  padding-left: 10%;
   display: grid;
   grid-template-areas: "ca-1 ca-2" "ca-3 ca-4";
-  gap: 2%; }
+  gap: 2%;
+  background-color: #fff; }
   .main-inicio .card1 {
     grid-area: ca-1;
     width: 70%;
@@ -103,9 +124,9 @@
     position: relative;
     align-items: center;
     align-content: center;
-    border: 2px solid #45dc2e84;
+    border: 2px solid #564f1d84;
     border-radius: 1rem;
-    background-color: #46dc2e; }
+    background-color: yellow; }
     .main-inicio .card1 img {
       width: 50%; }
   .main-inicio .card2 {
@@ -119,7 +140,7 @@
     align-content: center;
     border: 2px solid #46dc2e;
     border-radius: 1rem;
-    background-color: #46dc2e; }
+    background-color: rgba(236, 75, 17, 0.645); }
     .main-inicio .card2 img {
       width: 50%; }
   .main-inicio .card3 {
@@ -147,7 +168,7 @@
     align-content: center;
     border: 2px solid #46dc2e;
     border-radius: 1rem;
-    background-color: #46dc2e; }
+    background-color: rgba(98, 201, 226, 0.942); }
     .main-inicio .card4 img {
       width: 50%; }
 
@@ -197,7 +218,7 @@
   grid-template-areas: "productos pagos";
   width: 100%; }
   .main-pagos .section-form-pagos {
-    margin-top: 6rem;
+    margin-top: 16%;
     grid-area: pagos;
     width: 100%;
     display: flex;
@@ -206,9 +227,9 @@
     align-items: center;
     align-content: flex-end; }
     .main-pagos .section-form-pagos img {
-      width: 50%; }
+      width: 70%; }
     .main-pagos .section-form-pagos h2 {
-      color: red;
+      color: #FFC300;
       font-size: 5rem; }
     .main-pagos .section-form-pagos form {
       display: flex;
@@ -251,7 +272,7 @@
     .main-pagos .section-productos-pagos img {
       width: 20%; }
     .main-pagos .section-productos-pagos h2 {
-      color: red;
+      color: #FFC300;
       font-size: 5rem; }
     .main-pagos .section-productos-pagos ul {
       display: flex;
@@ -259,7 +280,7 @@
       justify-content: center;
       gap: 1rem; }
       .main-pagos .section-productos-pagos ul li {
-        padding-left: 10rem;
+        padding-left: 10%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -271,11 +292,11 @@
           justify-content: center;
           align-content: center;
           align-items: center;
-          background-color: #942a2a;
-          border: 12px solid #d26439;
+          background-color: #FFC300;
+          border: 2px solid #46dc2e;
           border-radius: 2rem;
           text-decoration: none;
-          color: yellow; }
+          color: #fff; }
           .main-pagos .section-productos-pagos ul li a:hover {
             transform: scale(1.1); }
 
@@ -316,21 +337,28 @@
 
 .texto-opciones {
   grid-area: txt;
+  padding-top: 10%;
   display: flex;
   flex-flow: column nowrap; }
   .texto-opciones .texto-opciones-1 {
+    border: 2px solid #FFC300;
+    border-radius: 1rem;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    align-items: flex-start; }
+    align-items: flex-start;
+    margin-bottom: 2%; }
     .texto-opciones .texto-opciones-1 h1 {
       margin-left: 5%;
       padding: 2%; }
   .texto-opciones .texto-opciones-2 {
+    border: 2px solid #FFC300;
+    border-radius: 1rem;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    align-items: flex-end; }
+    align-items: flex-end;
+    margin-bottom: 2%; }
     .texto-opciones .texto-opciones-2 h2 {
       margin-right: 10%;
       padding: 1%; }

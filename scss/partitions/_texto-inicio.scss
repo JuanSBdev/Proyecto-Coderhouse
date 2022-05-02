@@ -1,27 +1,34 @@
 .texto-opciones{
     grid-area: txt;
+    padding-top: 10%;
     display: flex;
     flex-flow: column nowrap;
-    .texto-opciones-1{
+        .texto-opciones-1{
+        border: 2px solid $color-principal;
+        border-radius: 1rem;
         display: flex;
         flex-flow: column wrap;
         align-content: center;
         align-items: flex-start;
+        margin-bottom: 2%;
         h1{
             margin-left: 5%;
             padding: 2%;
             }
-}
-.texto-opciones-2{
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    align-items: flex-end;
-    h2{
-    margin-right: 10%;       
-    padding: 1%;
-
     }
+    .texto-opciones-2{
+        border: 2px solid $color-principal;
+        border-radius: 1rem;
+
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        align-items: flex-end;
+        margin-bottom: 2%;
+            h2{
+                margin-right: 10%;       
+                padding: 1%;
+            }
 }
         
 }

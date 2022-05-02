@@ -29,7 +29,13 @@ $color-2: #46dc2e;
             align-items: center;
             justify-content: space-around;
             li{
-                color: red;
+                a{
+                    &:hover{
+                        -webkit-animation: swing 1s ease;
+                        animation: swing 1s ease;
+                        -webkit-animation-iteration-count: 1;
+                        animation-iteration-count: 1;                    }
+                }
             }
             .btn-header{
                 background-color: $color-principal;
