@@ -3,3 +3,30 @@
     margin-top: 10%;
     color:black
 }
+.footer-inicio{
+    grid-area: footer-o;
+    margin-top: 5rem;
+}
+
+.footer-about{
+    grid-area: footer-a;
+    width: 100%;
+    margin-bottom: 6%;
+    background-color: $color-principal;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+        h3{
+        margin-top: 2% ;
+        }
+        .footer-about-contact{
+            padding: 2%;
+            display: flex;
+            flex-flow: row nowrap;        
+            justify-content: space-evenly;
+                img{
+                    width: 10%;
+                }
+        }
+    }

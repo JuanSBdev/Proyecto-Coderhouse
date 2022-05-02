@@ -42,33 +42,7 @@
     }
 
 }
-.texto-opciones{
-    grid-area: txt;
-    display: flex;
-    flex-flow: column nowrap;
-    .texto-opciones-1{
-        display: flex;
-        flex-flow: column wrap;
-        align-content: center;
-        align-items: flex-start;
-        h1{
-            margin-left: 5%;
-            padding: 2%;
-            }
-}
-.texto-opciones-2{
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    align-items: flex-end;
-    h2{
-    margin-right: 10%;       
-    padding: 1%;
 
-    }
-}
-        
-}
     .main-inicio{
         grid-area: main;
         margin-left: 10%;
@@ -88,10 +62,9 @@
         border: 2px solid #45dc2e84;
         border-radius: 1rem; 
         background-color: $color-2;
-  
-        img{
-            width: 50%;
-        }
+            img{
+                width: 50%;
+            }
     
     }
     .card2{
@@ -154,10 +127,7 @@
 
 }
 
-.footer-inicio{
-    grid-area: footer-o;
-    margin-top: 5rem;
-}
+
 
 
 .main-about{
@@ -206,32 +176,119 @@
         flex-flow: column nowrap;
         background-color: $color-principal;
         
-  
+}
+}
 
-}
-}
-.footer-about{
-    grid-area: footer-a;
+.main-pagos{
+    display: grid;
+    grid-area: contenido;
+    grid-template-areas: "productos pagos";
     width: 100%;
-    margin-bottom: 6%;
-    background-color: $color-principal;
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: center;
-    align-items: center;
-    h3{
-        margin-top: 2% ;
-    }
-    .footer-about-contact{
-        padding: 2%;
+    .section-form-pagos{ 
+        margin-top: 6rem;
+        grid-area: pagos;
+        width: 100%;
         display: flex;
-                flex-flow: row nowrap;        
-                justify-content: space-evenly;
-        img{
-                width: 10%;
-            }
+        flex-flow:column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-end;
 
+        img{
+            width: 50%;
+        }
+        h2{
+            color: red;
+            font-size: 5rem;
+        }
+        form {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            input{
+                border-radius: 1rem ;
+            }
+        }
+        ul{
+            display:flex ;
+            flex-flow: column nowrap;
+            justify-content: center;
+            gap: 1rem;
+            li{
+                padding-left: 10rem;
+                display:flex ;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                a{
+                    display:flex ;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    background-color:#942a2a;
+                    border: 12px solid #d26439;
+                    border-radius: 2rem;
+                    text-decoration: none;
+                    color: yellow;
+            }
+        }
     }
-   
     
+}
+.section-productos-pagos{
+    grid-area: productos;
+    width: 100%;
+    margin-top: 7rem;
+    display:flex ;
+    flex-flow: column nowrap;
+    margin-left: 2rem;
+    img{
+        width: 20%;
     }
+        h2{
+            color: red;
+            font-size: 5rem;
+        }
+        ul{
+            display:flex ;
+            flex-flow: column nowrap;
+            justify-content: center;
+            gap: 1rem;
+            li{
+                padding-left: 10rem;
+                display:flex ;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                a{
+                    display:flex ;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    background-color:#942a2a;
+                    border: 12px solid #d26439;
+                    border-radius: 2rem;
+                    text-decoration: none;
+                    color: yellow;
+                    &:hover{
+                        transform: scale(1.1);
+
+                    }
+                }
+            }
+        }
+}
+}
+.footer-pagos{
+    grid-area: footer-2;
+    margin-top: 3rem;
+    background-color: $color-principal;
+    padding: 2%;
+    margin-bottom: 4%;
+}

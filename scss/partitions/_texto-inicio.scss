@@ -1,0 +1,27 @@
+.texto-opciones{
+    grid-area: txt;
+    display: flex;
+    flex-flow: column nowrap;
+    .texto-opciones-1{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        align-items: flex-start;
+        h1{
+            margin-left: 5%;
+            padding: 2%;
+            }
+}
+.texto-opciones-2{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: flex-end;
+    h2{
+    margin-right: 10%;       
+    padding: 1%;
+
+    }
+}
+        
+}

@@ -3,7 +3,6 @@ $header-color: #FFC300;
 $color-principal: $header-color;
 $color-2: #46dc2e;
 
-@media screen and (min-width: 765px){
     
 .header-index{
     grid-area: header-i;
@@ -41,4 +40,3 @@ $color-2: #46dc2e;
     }
     }
 
-}
