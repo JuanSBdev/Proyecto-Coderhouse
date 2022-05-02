@@ -15,6 +15,11 @@ $color-2: #46dc2e;
     z-index: 3;
     img{
         width: 16%;
+        -webkit-animation: rotation 2s ease;
+        animation: rotation 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+            
     }
 
     nav{

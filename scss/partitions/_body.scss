@@ -31,7 +31,38 @@
         transform: translateX(0);
     }
     }
-   
+    @keyframes rotation {
+        10% {
+          transform: rotate(0deg);
+        }
+        20% {
+          transform: rotate(-20deg);
+        }
+        30% {
+            transform: rotate(-30deg);
+          }
+        40% {
+            transform: rotate(-40deg);
+          }
+        50% {
+            transform: rotate(-30deg);
+          }
+        60% {
+              transform: rotate(-40deg);
+            }
+        70% {
+                transform: rotate(-30deg);
+            }
+        80% {
+                transform: rotate(-20deg);
+            }
+        90% {
+                transform: rotate(-10deg);
+            }
+        100% {
+                transform: rotate(0deg);
+            }
+        }
 
 
 

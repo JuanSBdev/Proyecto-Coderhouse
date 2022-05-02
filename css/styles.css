@@ -18,6 +18,28 @@
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
 
+@keyframes rotation {
+  10% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(-20deg); }
+  30% {
+    transform: rotate(-30deg); }
+  40% {
+    transform: rotate(-40deg); }
+  50% {
+    transform: rotate(-30deg); }
+  60% {
+    transform: rotate(-40deg); }
+  70% {
+    transform: rotate(-30deg); }
+  80% {
+    transform: rotate(-20deg); }
+  90% {
+    transform: rotate(-10deg); }
+  100% {
+    transform: rotate(0deg); } }
+
 .body-index {
   width: 100%;
   display: grid;
@@ -51,7 +73,11 @@
   justify-content: center;
   z-index: 3; }
   .header-index img {
-    width: 16%; }
+    width: 16%;
+    -webkit-animation: rotation 2s ease;
+    animation: rotation 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
   .header-index nav {
     display: flex;
     flex-flow: row-reverse nowrap; }
