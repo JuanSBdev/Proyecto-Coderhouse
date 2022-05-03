@@ -76,7 +76,7 @@
     "footer-i";
     background: rgb(255,222,0);
     background: linear-gradient(0deg, rgb(238, 183, 20) 24%, rgba(245,255,0,1) 99%);
-
+}
 .body-inicio{
     width: 100%;
     display: grid;
@@ -85,10 +85,9 @@
     "txt"
     "main"
     "footer-o";
-    gap: 12rem;
-    background: rgb(255,222,0);
-    background: linear-gradient(0deg, rgb(238, 183, 20) 24%, rgba(245,255,0,1) 99%);
-    
+    gap: 2rem;
+    background-color: rgba(241, 206, 8, 0.494);
+
 
 }
 .body-about{
@@ -107,5 +106,4 @@
     "contenido"
     "footer-2";
     width: 100%;
-}
 }

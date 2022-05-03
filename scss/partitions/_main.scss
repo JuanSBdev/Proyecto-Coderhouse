@@ -50,7 +50,6 @@
         grid-template-areas: "ca-1 ca-2"
         "ca-3 ca-4";
         gap: 2%;
-        background-color: #fff;
 
     .card1{
         grid-area: ca-1;
@@ -64,6 +63,11 @@
         border: 2px solid #564f1d84;
         border-radius: 1rem; 
         background-color: yellow;
+        &:hover{
+            transform: scale(1.5);
+            z-index: 1;
+
+        }
             img{
                 width: 50%;
             }
@@ -80,7 +84,12 @@
         align-content: center;
         border: 2px solid $color-2;
         border-radius: 1rem; 
-        background-color: rgba(236, 75, 17, 0.645);
+        background-color: rgb(236, 75, 17);
+        &:hover{
+            transform: scale(1.5);
+            z-index: 1;
+
+        }
 
         img{
             width: 50%;
@@ -99,6 +108,9 @@
         border: 2px solid $color-2;
         border-radius: 1rem; 
         background-color: $color-2;
+        &:hover{
+            transform: scale(1.5);
+        }
 
 
         img{
@@ -118,10 +130,13 @@
         border: 2px solid $color-2;
         border-radius: 1rem; 
         background-color: rgba(98, 201, 226, 0.942);
-
+        &:hover{
+            transform: scale(1.5);
+        }
  
         img{
             width: 50%;
+           
         }
 
     }
