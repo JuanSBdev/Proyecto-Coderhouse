@@ -210,7 +210,7 @@
     .main-inicio .card4 img {
       width: 50%; }
 
-.carrusel {
+.carrusele {
   grid-area: carrosa;
   width: 100%;
   display: flex;
@@ -218,11 +218,9 @@
   justify-content: center;
   align-content: center;
   align-items: center; }
-  .carrusel button {
-    background-color: #564f1d84; }
-  .carrusel img {
+  .carrusele img {
     width: 30%;
-    margin-left: 20%; }
+    margin-left: 40%; }
 
 .main-about {
   padding-top: 0%;
