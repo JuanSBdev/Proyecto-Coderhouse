@@ -140,8 +140,26 @@
         }
 
     }
+    
 
-
+}
+.carrusel{
+    grid-area: carrosa;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    button{
+        background-color: #564f1d84;
+    }
+    .carousel-inner{
+    }
+    img{
+        width: 30%;
+        margin-left: 20%;
+    }
 }
 
 

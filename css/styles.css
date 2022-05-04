@@ -50,7 +50,7 @@
 .body-inicio {
   width: 100%;
   display: grid;
-  grid-template-areas: "header-i" "txt" "main" "footer-o";
+  grid-template-areas: "header-i" "txt" "main" "carrosa" "footer-o";
   gap: 2rem;
   background-color: rgba(241, 206, 8, 0.494); }
 
@@ -209,6 +209,20 @@
       transform: scale(1.5); }
     .main-inicio .card4 img {
       width: 50%; }
+
+.carrusel {
+  grid-area: carrosa;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .carrusel button {
+    background-color: #564f1d84; }
+  .carrusel img {
+    width: 30%;
+    margin-left: 20%; }
 
 .main-about {
   padding-top: 0%;
