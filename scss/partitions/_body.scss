@@ -34,22 +34,22 @@
     }
     @keyframes rotation {
         10% {
-          transform: rotate(0deg);
+            transform: rotate(0deg);
         }
         20% {
-          transform: rotate(-20deg);
+            transform: rotate(-20deg);
         }
         30% {
             transform: rotate(-30deg);
-          }
+            }
         40% {
             transform: rotate(-40deg);
-          }
+            }
         50% {
             transform: rotate(-30deg);
-          }
+            }
         60% {
-              transform: rotate(-40deg);
+            transform: rotate(-40deg);
             }
         70% {
                 transform: rotate(-30deg);
@@ -89,9 +89,8 @@
     "carrosa"
     "footer-o";
     gap: 2rem;
-    background-color: rgba(241, 206, 8, 0.494);
-
-
+    background: rgb(237,251,63);
+    background: radial-gradient(circle, rgba(237,251,63,1) 0%, rgba(252,164,70,1) 95%, rgba(252,70,70,1) 99%);
 }
 .body-about{
     width: 100%;

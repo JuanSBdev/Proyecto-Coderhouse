@@ -34,3 +34,10 @@
                 }
         }
     }
+    .footer-pagos{
+        grid-area: footer-2;
+        margin-top: 3rem;
+        background-color: map-get($colores, color2);
+        padding: 2%;
+        margin-bottom: 4%;
+    }
