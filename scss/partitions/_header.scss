@@ -1,12 +1,10 @@
 
-$header-color: #FFC300;
-$color-principal: $header-color;
-$color-2: #46dc2e;
 
+@import"_variables.scss";
     
 .header-index{
     grid-area: header-i;
-    background-color: $header-color;
+    background-color:map-get($colores, color2);
     width: 100%;
     position: fixed;
     display: flex;
@@ -37,6 +35,7 @@ $color-2: #46dc2e;
             justify-content: space-around;
             li{
                 a{
+                
                     &:hover{
                         -webkit-animation: swing 1s ease;
                         animation: swing 1s ease;
@@ -44,11 +43,7 @@ $color-2: #46dc2e;
                         animation-iteration-count: 1;                    }
                 }
             }
-            .btn-header{
-                background-color: $color-principal;
-                color: black;
-                border: 2px solid black;
-            }
+           
         }
     }
     }

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
-@-webkit-keyframes swing {
+@keyframes swing {
   15% {
     -webkit-transform: translateX(5px);
     transform: translateX(5px); }
@@ -68,7 +68,7 @@
 
 .header-index {
   grid-area: header-i;
-  background-color: #FFC300;
+  background-color: #ffa322;
   width: 100%;
   position: fixed;
   display: flex;
@@ -97,10 +97,6 @@
         animation: swing 1s ease;
         -webkit-animation-iteration-count: 1;
         animation-iteration-count: 1; }
-      .header-index nav ul .btn-header {
-        background-color: #FFC300;
-        color: black;
-        border: 2px solid black; }
 
 .main-index {
   grid-area: main-i;
@@ -155,10 +151,42 @@
     align-content: center;
     border: 2px solid #564f1d84;
     border-radius: 1rem;
-    background-color: yellow; }
+    background: #ffde00;
+    background: linear-gradient(50deg, #ffde00 25%, #ffaa00 80%, #ff9c00 87%, #ff9200 94%, #ff6f00 100%); }
     .main-inicio .card1:hover {
-      transform: scale(1.5);
+      grid-area: ca-1 ca-2;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+      transform: scale(1.1);
+      transition: all 500ms;
       z-index: 1; }
+      .main-inicio .card1:hover .info-card {
+        display: block;
+        list-style: none; }
+      .main-inicio .card1:hover .oferta {
+        -webkit-animation: swing 2s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .main-inicio .card1 .oferta {
+      display: flex;
+      align-self: flex-start;
+      border-radius: 1rem;
+      background: #ff6325;
+      background: linear-gradient(50deg, #ff6325 37%, #f1ec34 100%); }
+    .main-inicio .card1 .burger1 {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center; }
+    .main-inicio .card1 .info-card {
+      display: none; }
     .main-inicio .card1 img {
       width: 50%; }
   .main-inicio .card2 {
@@ -166,16 +194,37 @@
     width: 70%;
     padding: 2%;
     display: flex;
-    flex-flow: column nowrap;
-    position: relative;
-    align-items: center;
+    justify-content: center;
     align-content: center;
+    align-items: center;
+    flex-flow: row-reverse wrap;
     border: 2px solid #46dc2e;
     border-radius: 1rem;
-    background-color: #ec4b11; }
+    background: #e10058;
+    background: linear-gradient(50deg, #e10058 53%, #eb2c2c 84%, #f5ff00 100%); }
     .main-inicio .card2:hover {
-      transform: scale(1.5);
+      grid-area: ca-2 ca-1;
+      width: 95%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+      transform: scale(1.1);
+      transition: all 500ms;
       z-index: 1; }
+      .main-inicio .card2:hover .info-card2 {
+        list-style: none;
+        display: block; }
+    .main-inicio .card2 .burger2 {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center; }
+    .main-inicio .card2 .info-card2 {
+      display: none; }
     .main-inicio .card2 img {
       width: 50%; }
   .main-inicio .card3 {
@@ -189,9 +238,31 @@
     align-content: center;
     border: 2px solid #46dc2e;
     border-radius: 1rem;
-    background-color: #46dc2e; }
+    background: #00b9ff;
+    background: linear-gradient(50deg, #00b9ff 60%, #00e1b1 86%, #00ff77 100%); }
     .main-inicio .card3:hover {
-      transform: scale(1.5); }
+      grid-area: ca-1 ca-2;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+      transform: scale(1.2);
+      transition: all 500ms;
+      z-index: 1; }
+      .main-inicio .card3:hover .info-card3 {
+        display: block;
+        list-style: none; }
+    .main-inicio .card3 .burger3 {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center; }
+    .main-inicio .card3 .info-card3 {
+      display: none; }
     .main-inicio .card3 img {
       width: 50%; }
   .main-inicio .card4 {
@@ -205,9 +276,31 @@
     align-content: center;
     border: 2px solid #46dc2e;
     border-radius: 1rem;
-    background-color: rgba(98, 201, 226, 0.942); }
+    background: #feff25;
+    background: linear-gradient(50deg, #feff25 24%, #f0f134 64%, #ffab00 100%); }
     .main-inicio .card4:hover {
-      transform: scale(1.5); }
+      grid-area: ca-3 ca-4;
+      width: 95%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+      transform: scale(1.1);
+      transition: all 500ms;
+      z-index: 1; }
+      .main-inicio .card4:hover .info-card4 {
+        list-style: none;
+        display: block; }
+    .main-inicio .card4 .burger4 {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center; }
+    .main-inicio .card4 .info-card4 {
+      display: none; }
     .main-inicio .card4 img {
       width: 50%; }
 
@@ -230,7 +323,7 @@
 .main-about {
   padding-top: 0%;
   margin-top: 0%;
-  background-color: #b96262;
+  background-color: #FFC300;
   grid-area: main-a;
   display: flex;
   flex-flow: column wrap;
@@ -249,7 +342,7 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    background-color: #FFC300; }
+    background-color: #ffa322; }
     .main-about .section-1-about img {
       width: 60%;
       padding: 10%;
@@ -379,7 +472,7 @@
   grid-area: footer-a;
   width: 100%;
   margin-bottom: 6%;
-  background-color: #FFC300;
+  background-color: #ffa322;
   display: flex;
   flex-flow: column nowrap;
   align-content: center;

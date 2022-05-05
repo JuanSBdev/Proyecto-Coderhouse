@@ -1,3 +1,4 @@
+@import "_variables.scss";
 
 .main-index{
     grid-area: main-i;
@@ -62,11 +63,51 @@
         align-content: center;      
         border: 2px solid #564f1d84;
         border-radius: 1rem; 
-        background-color: yellow;
-        &:hover{
-            transform: scale(1.5);
-            z-index: 1;
+        background: rgb(255,222,0);
+        background: linear-gradient(50deg, rgba(255,222,0,1) 25%, rgba(255,170,0,1) 80%, rgba(255,156,0,1) 87%, rgba(255,146,0,1) 94%, rgba(255,111,0,1) 100%);
+        
 
+        &:hover{
+            grid-area: ca-1 ca-2;
+
+            position: relative;
+            width: 100%;
+            @include flex-centrar;
+            @include row-no;
+            transform: scale(1.1);
+            transition: all 500ms;
+
+            z-index: 1;
+            .info-card{
+                display: block;
+                list-style: none;
+
+            }
+            .oferta{
+                -webkit-animation: swing 2s ease;
+                animation: swing 1s ease;
+                -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;      
+            }
+
+        }
+        .oferta{
+            display: flex;
+            align-self: flex-start;
+            border-radius: 1rem;
+            background: rgb(255,99,37);
+            background: linear-gradient(50deg, rgba(255,99,37,1) 37%, rgba(241,236,52,1) 100%);
+        
+        }
+        .burger1{
+            width: 100%;
+            display: flex;
+            @include col-no;
+            justify-content: center;
+            align-items: center;
+        }
+        .info-card{
+            display: none;
         }
             img{
                 width: 50%;
@@ -77,25 +118,44 @@
         grid-area: ca-2;
         width: 70%;
         padding: 2%;       
-        display: flex;
-        flex-flow: column nowrap;
-        position: relative;
-        align-items: center;
-        align-content: center;
+        @include flex-centrar;
+        flex-flow: row-reverse wrap;
         border: 2px solid $color-2;
         border-radius: 1rem; 
-        background-color: rgb(236, 75, 17);
-        &:hover{
-            transform: scale(1.5);
-            z-index: 1;
+        background: rgb(225,0,88);
+background: linear-gradient(50deg, rgba(225,0,88,1) 53%, rgba(235,44,44,1) 84%, rgba(245,255,0,1) 100%);
+                &:hover{
+                grid-area: ca-2 ca-1;
+                width: 95%;
+                position: relative;
+                @include flex-centrar;
+                flex-flow: row nowrap;
+                transform: scale(1.1);
+                transition: all 500ms;
 
-        }
+                z-index: 1;
+                .info-card2{
+                    list-style: none;
 
-        img{
-            width: 50%;
-        }
-
-    }
+                    display: block;                    
+                }
+    
+            }
+            .burger2{
+                width: 100%;
+                display: flex;
+                @include col-no;
+                justify-content: center;
+                align-items: center;
+            }
+            .info-card2{
+                display: none;
+            }
+            img{
+                width: 50%;
+            }
+    
+}
     .card3{
         grid-area: ca-3;
         width: 70%;
@@ -107,15 +167,37 @@
         align-content: center;        
         border: 2px solid $color-2;
         border-radius: 1rem; 
-        background-color: $color-2;
-        &:hover{
-            transform: scale(1.5);
-        }
+        background: rgb(0,185,255);
+        background: linear-gradient(50deg, rgba(0,185,255,1) 60%, rgba(0,225,177,1) 86%, rgba(0,255,119,1) 100%);   
+                &:hover{
+                grid-area: ca-1 ca-2;
+                position: relative;
+                width: 100%;
+                @include flex-centrar;
+                @include row-no;
+                transform: scale(1.2);
+                transition: all 500ms;
+                z-index: 1;
+            .info-card3{
+                display: block;
+                list-style: none;
 
+            }
 
-        img{
-            width: 50%;
         }
+        .burger3{
+            width: 100%;
+            display: flex;
+            @include col-no;
+            justify-content: center;
+            align-items: center;
+        }
+        .info-card3{
+            display: none;
+        }
+            img{
+                width: 50%;
+            }
 
     }
     .card4{
@@ -129,15 +211,38 @@
         align-content: center;       
         border: 2px solid $color-2;
         border-radius: 1rem; 
-        background-color: rgba(98, 201, 226, 0.942);
-        &:hover{
-            transform: scale(1.5);
-        }
- 
-        img{
-            width: 50%;
-           
-        }
+        background: rgb(254,255,37);
+        background: linear-gradient(50deg, rgba(254,255,37,1) 24%, rgba(240,241,52,1) 64%, rgba(255,171,0,1) 100%);
+            &:hover{
+            grid-area: ca-3 ca-4;
+            width: 95%;
+                position: relative;
+                @include flex-centrar;
+                flex-flow: row nowrap;
+                transform: scale(1.1);
+                transition: all 500ms;
+
+                z-index: 1;
+                .info-card4{
+                    list-style: none;
+                    display: block;                    
+                }
+    
+            }
+            .burger4{
+                width: 100%;
+                display: flex;
+                @include col-no;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .info-card4{
+                display: none;
+            }
+            img{
+                width: 50%;
+            }
 
     }
     
@@ -169,7 +274,7 @@
 .main-about{
     padding-top: 0%;
     margin-top: 0%;
-    background-color: rgb(185, 98, 98);
+    background-color: map-get($colores, color1);
     grid-area: main-a;
     display: flex;
     flex-flow: column wrap;
@@ -191,7 +296,7 @@
         align-content: center;
         align-items: center;
         justify-content: center;
-        background-color: $color-principal;
+        background-color: map-get($colores, color2);
         
         img{
             width: 60%;
