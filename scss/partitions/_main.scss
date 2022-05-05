@@ -145,13 +145,17 @@
 }
 .carrusele{
     grid-area: carrosa;
+    margin-top: 10%;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-   
+   button{
+       background-color: $color-principal;
+       color: $color-principal;
+   }
     
     img{
         width: 30%;

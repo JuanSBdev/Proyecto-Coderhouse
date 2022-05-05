@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 @-webkit-keyframes swing {
   15% {
     -webkit-transform: translateX(5px);
@@ -212,12 +213,16 @@
 
 .carrusele {
   grid-area: carrosa;
+  margin-top: 10%;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-content: center;
   align-items: center; }
+  .carrusele button {
+    background-color: #FFC300;
+    color: #FFC300; }
   .carrusele img {
     width: 30%;
     margin-left: 40%; }
@@ -393,12 +398,13 @@
         transition: ease all 500ms; }
 
 .texto-opciones {
+  font-family: 'Koulen';
   grid-area: txt;
   padding-top: 10%;
   display: flex;
   flex-flow: column nowrap; }
   .texto-opciones .texto-opciones-1 {
-    border: 2px solid #FFC300;
+    border: 12px solid #FFC300;
     border-radius: 1rem;
     display: flex;
     flex-flow: column wrap;
@@ -406,11 +412,18 @@
     align-items: flex-start;
     margin-bottom: 2%;
     background-color: azure; }
+    .texto-opciones .texto-opciones-1:hover {
+      transform: scale(1.1);
+      transition: ease-in-out 2s;
+      display: flex;
+      flex-flow: column nowrap;
+      align-content: center;
+      align-items: center; }
     .texto-opciones .texto-opciones-1 h1 {
       margin-left: 5%;
       padding: 2%; }
   .texto-opciones .texto-opciones-2 {
-    border: 2px solid #FFC300;
+    border: 12px solid #FFC300;
     border-radius: 1rem;
     display: flex;
     flex-flow: column wrap;

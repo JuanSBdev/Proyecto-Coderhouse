@@ -1,17 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 .texto-opciones{
+    font-family: 'Koulen';
+
     grid-area: txt;
     padding-top: 10%;
     display: flex;
     flex-flow: column nowrap;
         .texto-opciones-1{
-        border: 2px solid $color-principal;
+        border: 12px solid $color-principal;
         border-radius: 1rem;
+
         display: flex;
         flex-flow: column wrap;
         align-content: center;
         align-items: flex-start;
         margin-bottom: 2%;
         background-color: azure;
+        &:hover{
+            transform: scale(1.1);
+            transition: ease-in-out 2s;
+            display: flex;
+            flex-flow: column nowrap;
+            align-content: center;
+            align-items: center;
+        }
 
         h1{
             margin-left: 5%;
@@ -19,7 +31,7 @@
             }
     }
     .texto-opciones-2{
-        border: 2px solid $color-principal;
+        border: 12px solid $color-principal;
         border-radius: 1rem;
 
         display: flex;
