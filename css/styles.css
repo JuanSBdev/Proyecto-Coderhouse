@@ -225,7 +225,7 @@
 .main-about {
   padding-top: 0%;
   margin-top: 0%;
-  background-color: white;
+  background-color: #b96262;
   grid-area: main-a;
   display: flex;
   flex-flow: column wrap;
