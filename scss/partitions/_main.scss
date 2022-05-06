@@ -250,9 +250,9 @@ background: linear-gradient(50deg, rgba(225,0,88,1) 53%, rgba(235,44,44,1) 84%, 
 
 }
 .carrusele{
+    margin-top: 0%;
     grid-area: carrosa;
     padding: 10%;
-
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -266,8 +266,20 @@ background: linear-gradient(50deg, rgba(225,0,88,1) 53%, rgba(235,44,44,1) 84%, 
     }
     
     img{
-        width: 30%;
+        padding-top: 10%;
         margin-left: 40%;
+        max-width: 40%;
+        max-height: 40%;
+        object-fit: contain;
+       
+        
+    }
+    .img-pollo{
+        margin-top: -12%;
+    }
+    .img-veggie{
+        padding-top: 10%;
+
     }
 }
 

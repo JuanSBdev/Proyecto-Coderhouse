@@ -51,7 +51,7 @@
 .body-inicio {
   width: 100%;
   display: grid;
-  grid-template-areas: "header-i" "txt" "main" "carrosa" "footer-o";
+  grid-template-areas: "header-i" "txt" "main" "txt-2"  "carrosa" "footer-o";
   gap: 2rem;
   background: #edfb3f;
   background: radial-gradient(circle, #edfb3f 0%, #fca446 95%, #fc4646 99%); }
@@ -307,6 +307,7 @@
       width: 50%; }
 
 .carrusele {
+  margin-top: 0%;
   grid-area: carrosa;
   padding: 10%;
   width: 100%;
@@ -318,8 +319,15 @@
   .carrusele button {
     background-color: transparent; }
   .carrusele img {
-    width: 30%;
-    margin-left: 40%; }
+    padding-top: 10%;
+    margin-left: 40%;
+    max-width: 40%;
+    max-height: 40%;
+    object-fit: contain; }
+  .carrusele .img-pollo {
+    margin-top: -12%; }
+  .carrusele .img-veggie {
+    padding-top: 10%; }
 
 .main-about {
   padding-top: 0%;
@@ -510,16 +518,20 @@
     .texto-opciones .texto-opciones-1 h1 {
       margin-left: 5%;
       padding: 2%; }
-  .texto-opciones .texto-opciones-2 {
-    border: 2px solid #ffa322;
-    border-radius: 1rem;
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    align-items: flex-end;
-    margin-bottom: 2%;
-    background: #ffa322;
-    background: linear-gradient(0deg, rgba(255, 163, 34, 0.667104) 20%, #f1ec34 100%); }
-    .texto-opciones .texto-opciones-2 h2 {
-      margin-right: 10%;
-      padding: 1%; }
+
+.texto-opciones-2 {
+  grid-area: txt-2;
+  border: 2px solid #ffa322;
+  border-bottom: none;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin-bottom: 2%;
+  background: #ffa322;
+  background: linear-gradient(0deg, #f1ec34 100%, rgba(255, 163, 34, 0.9) 20%); }
+  .texto-opciones-2 h2 {
+    margin-right: 10%;
+    padding: 1%; }
