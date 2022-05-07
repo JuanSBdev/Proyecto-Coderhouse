@@ -75,9 +75,10 @@
     "header-i"
     "main-i"
     "footer-i";
-    background: rgb(255,222,0);
-    background: linear-gradient(0deg, rgb(238, 183, 20) 24%, rgba(245,255,0,1) 99%);
-}
+    background-image:url("https://t4.ftcdn.net/jpg/04/77/41/49/360_F_477414972_fCT8rvCa1KxIq0g9p51GmcRiQhl2PSvi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
 
 .body-inicio{
     width: 100%;
@@ -108,5 +109,13 @@
     "header-i"
     "contenido"
     "footer-2";
+    width: 100%;
+}
+.body-login{
+    display: grid;
+    grid-template-areas:
+    "header-i"
+    "cont"
+    "footer-i";
     width: 100%;
 }

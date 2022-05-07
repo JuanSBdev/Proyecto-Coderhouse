@@ -45,8 +45,9 @@
   width: 100%;
   display: grid;
   grid-template-areas: "header-i" "main-i" "footer-i";
-  background: #ffde00;
-  background: linear-gradient(0deg, #eeb714 24%, #f5ff00 99%); }
+  background-image: url("https://t4.ftcdn.net/jpg/04/77/41/49/360_F_477414972_fCT8rvCa1KxIq0g9p51GmcRiQhl2PSvi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .body-inicio {
   width: 100%;
@@ -65,6 +66,11 @@
 .body-pagos {
   display: grid;
   grid-template-areas: "header-i" "contenido" "footer-2";
+  width: 100%; }
+
+.body-login {
+  display: grid;
+  grid-template-areas: "header-i" "cont" "footer-i";
   width: 100%; }
 
 .header-index {
@@ -558,3 +564,7 @@
     flex-flow: column nowrap;
     margin-left: 2rem;
     margin-right: 2rem; }
+
+.main-login {
+  grid-area: cont;
+  margin-top: 10%; }
