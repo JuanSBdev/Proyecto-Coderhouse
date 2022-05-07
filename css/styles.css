@@ -282,10 +282,10 @@
     position: relative;
     align-items: center;
     align-content: center;
-    border: 2px solid #ffa322;
+    border: 2px solid black;
     border-radius: 1rem;
-    background: #feff25;
-    background: linear-gradient(50deg, #feff25 24%, #f0f134 64%, #ffab00 100%); }
+    background: #d4781c;
+    background: linear-gradient(45deg, #d4781c 3%, #c8ef41 50%, #ff8901 100%); }
     .main-inicio .card4:hover {
       grid-area: ca-3 ca-4;
       width: 95%;

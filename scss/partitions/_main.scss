@@ -209,10 +209,10 @@
         position: relative;
         align-items: center;
         align-content: center;       
-        border: 2px solid map-get($colores, color2);
+        border: 2px solid black;
         border-radius: 1rem; 
-        background: rgb(254,255,37);
-        background: linear-gradient(50deg, rgba(254,255,37,1) 24%, rgba(240,241,52,1) 64%, rgba(255,171,0,1) 100%);
+        background: rgb(212,120,28);
+background: linear-gradient(45deg, rgba(212,120,28,1) 3%, rgba(200,239,65,1) 50%, rgba(255,137,1,1) 100%);
             &:hover{
             grid-area: ca-3 ca-4;
             width: 95%;
