@@ -199,7 +199,7 @@
     align-content: center;
     align-items: center;
     flex-flow: row-reverse wrap;
-    border: 2px solid #ffa322;
+    border: 2px solid black;
     border-radius: 1rem;
     background: #e10058;
     background: linear-gradient(50deg, #e10058 53%, #eb2c2c 84%, #f5ff00 100%); }
@@ -237,10 +237,10 @@
     position: relative;
     align-items: center;
     align-content: center;
-    border: 2px solid #ffa322;
+    border: 2px solid black;
     border-radius: 1rem;
-    background: #00b9ff;
-    background: linear-gradient(50deg, #00b9ff 60%, #00e1b1 86%, #00ff77 100%); }
+    background: #35b989;
+    background: linear-gradient(45deg, #35b989 10%, #32db51 65%, #197252 90%); }
     .main-inicio .card3:hover {
       grid-area: ca-1 ca-2;
       position: relative;
@@ -316,11 +316,19 @@
   justify-content: center;
   align-content: center;
   align-items: center; }
+  .carrusele .burger-car-3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center; }
+    .carrusele .burger-car-3 .texto-burger-3 {
+      padding-left: 10%; }
   .carrusele button {
     background-color: transparent; }
   .carrusele img {
     padding-top: 10%;
-    margin-left: 40%;
+    margin-left: 20%;
     max-width: 40%;
     max-height: 40%;
     object-fit: contain; }
@@ -506,22 +514,22 @@
   display: flex;
   flex-flow: column nowrap; }
   .texto-opciones .texto-opciones-1 {
-    border: 2px solid #ffa322;
     border-radius: 1rem;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
     align-items: flex-start;
-    margin-bottom: 2%;
-    background: #ffa322;
-    background: linear-gradient(0deg, rgba(255, 163, 34, 0.667104) 20%, #f1ec34 100%); }
+    margin-bottom: 2%; }
     .texto-opciones .texto-opciones-1 h1 {
+      font-size: 4rem;
+      color: #ffa322;
       margin-left: 5%;
-      padding: 2%; }
+      padding: 2%;
+      -webkit-text-stroke: 3px black; }
 
 .texto-opciones-2 {
   grid-area: txt-2;
-  border: 2px solid #ffa322;
+  margin-top: 15%;
   border-bottom: none;
   border-radius: 1rem;
   display: flex;
@@ -529,9 +537,19 @@
   align-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  margin-bottom: 2%;
-  background: #ffa322;
-  background: linear-gradient(0deg, #f1ec34 100%, rgba(255, 163, 34, 0.9) 20%); }
+  margin-bottom: 2%; }
   .texto-opciones-2 h2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     margin-right: 10%;
     padding: 1%; }
+  .texto-opciones-2 p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin-left: 2rem;
+    margin-right: 2rem; }

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import "./variables";
+
 .texto-opciones{
     font-family: 'Koulen';
 
@@ -7,19 +9,19 @@
     display: flex;
     flex-flow: column nowrap;
         .texto-opciones-1{
-        border: 2px solid map-get($colores, color2);
         border-radius: 1rem;
-
         display: flex;
         flex-flow: column wrap;
         align-content: center;
         align-items: flex-start;
         margin-bottom: 2%;
-        background: rgb(255,163,34);
-        background: linear-gradient(0deg, rgba(255,163,34,0.6671043417366946) 20%, rgba(241,236,52,1) 100%);
+        
         h1{
+            font-size: 4rem;
+            color:map-get($colores, color2) ;
             margin-left: 5%;
             padding: 2%;
+            -webkit-text-stroke: 3px black;
             }
     }
     
@@ -27,16 +29,22 @@
 
 .texto-opciones-2{
     grid-area: txt-2;
-    border: 2px solid map-get($colores, color2);
+    margin-top: 15%;
     border-bottom: none;
     border-radius: 1rem;
     @include flex-centrar;
     @include col-no;
     margin-bottom: 2%;
-    background: rgb(255,163,34);
-    background: linear-gradient(0deg,  rgba(241,236,52,1) 100%, rgba(255, 163, 34, 0.9) 20%);
         h2{
+            @include flex-centrar;
             margin-right: 10%;       
             padding: 1%;
+        }
+        p{
+            @include flex-centrar;
+            @include col-no;
+            margin-left: 2rem;
+            margin-right: 2rem;
+
         }
 }

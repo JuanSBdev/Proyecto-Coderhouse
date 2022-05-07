@@ -12,6 +12,13 @@ $colores:(
     align-content: center;
     align-items: center;
 };
+@mixin flex-space-evenly{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+};
 
 @mixin row-no {
     flex-flow: row nowrap;
