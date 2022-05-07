@@ -17,7 +17,7 @@
     .buscador{
         width: 100%;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
         .input-localizacion{
