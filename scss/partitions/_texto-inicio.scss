@@ -3,7 +3,6 @@
 
 .texto-opciones{
     font-family: 'Koulen';
-
     grid-area: txt;
     padding-top: 10%;
     display: flex;
@@ -35,6 +34,7 @@
     @include flex-centrar;
     @include col-no;
     margin-bottom: 2%;
+    font-family: 'Koulen';
         h2{
             @include flex-centrar;
             margin-right: 10%;       

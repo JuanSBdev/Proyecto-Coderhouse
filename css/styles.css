@@ -207,8 +207,8 @@
     flex-flow: row-reverse wrap;
     border: 2px solid black;
     border-radius: 1rem;
-    background: #e10058;
-    background: linear-gradient(50deg, #e10058 53%, #eb2c2c 84%, #f5ff00 100%); }
+    background: #6a003e;
+    background: linear-gradient(45deg, #6a003e 3%, #410575 26%, #3e1bdd 60%, #430287 82%, #870202 100%); }
     .main-inicio .card2:hover {
       grid-area: ca-2 ca-1;
       width: 95%;
@@ -548,7 +548,8 @@
   align-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  font-family: 'Koulen'; }
   .texto-opciones-2 h2 {
     display: flex;
     justify-content: center;
