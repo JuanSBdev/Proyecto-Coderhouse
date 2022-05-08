@@ -46,11 +46,15 @@
 
     .main-inicio{
         grid-area: main;
-        padding-left: 10%;
         display: grid;
         grid-template-areas: "ca-1 ca-2"
         "ca-3 ca-4";
         gap: 2%;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2XBmGXjhP-DmvIv3Z9B_7LhUquAeP0C1Gw&usqp=CAU");
+        background-repeat: cover;
+        padding:10%;
+        padding-left: 15%;
+        margin-top:20%;
 
     .card1{
         grid-area: ca-1;

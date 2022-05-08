@@ -143,10 +143,14 @@
 
 .main-inicio {
   grid-area: main;
-  padding-left: 10%;
   display: grid;
   grid-template-areas: "ca-1 ca-2" "ca-3 ca-4";
-  gap: 2%; }
+  gap: 2%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2XBmGXjhP-DmvIv3Z9B_7LhUquAeP0C1Gw&usqp=CAU");
+  background-repeat: cover;
+  padding: 10%;
+  padding-left: 15%;
+  margin-top: 20%; }
   .main-inicio .card1 {
     grid-area: ca-1;
     width: 70%;
@@ -529,14 +533,26 @@
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    align-items: flex-start;
-    margin-bottom: 2%; }
+    align-items: flex-start; }
     .texto-opciones .texto-opciones-1 h1 {
       font-size: 4rem;
       color: #ffa322;
       margin-left: 5%;
       padding: 2%;
       -webkit-text-stroke: 3px black; }
+    .texto-opciones .texto-opciones-1 h3 {
+      align-self: center; }
+    .texto-opciones .texto-opciones-1 img {
+      width: 21%;
+      align-self: flex-end;
+      padding-bottom: 10%;
+      position: absolute; }
+    .texto-opciones .texto-opciones-1 .txt-op-2 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      flex-flow: row nowrap; }
 
 .texto-opciones-2 {
   grid-area: txt-2;
