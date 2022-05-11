@@ -165,8 +165,8 @@
     background: #ffde00;
     background: linear-gradient(50deg, #ffde00 25%, #ffaa00 80%, #ff9c00 87%, #ff9200 94%, #ff6f00 100%); }
     .main-inicio .card1:hover {
-      grid-area: ca-1 ca-2;
-      position: relative;
+      grid-area: ca-1;
+      position: block;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -175,6 +175,8 @@
       flex-flow: row nowrap;
       transform: scale(1.1);
       transition: all 500ms;
+      backdrop-filter: blur(5px);
+      overflow: hidden;
       z-index: 1; }
       .main-inicio .card1:hover .info-card {
         display: block;
@@ -214,7 +216,7 @@
     background: #6a003e;
     background: linear-gradient(45deg, #6a003e 3%, #410575 26%, #3e1bdd 60%, #430287 82%, #870202 100%); }
     .main-inicio .card2:hover {
-      grid-area: ca-2 ca-1;
+      grid-area: ca-2;
       width: 95%;
       position: relative;
       display: flex;
@@ -224,7 +226,8 @@
       flex-flow: row nowrap;
       transform: scale(1.1);
       transition: all 500ms;
-      z-index: 1; }
+      z-index: 1;
+      overflow: hidden; }
       .main-inicio .card2:hover .info-card2 {
         list-style: none;
         display: block; }
@@ -252,7 +255,7 @@
     background: #35b989;
     background: linear-gradient(45deg, #35b989 10%, #32db51 65%, #197252 90%); }
     .main-inicio .card3:hover {
-      grid-area: ca-1 ca-2;
+      grid-area: ca-3;
       position: relative;
       width: 100%;
       display: flex;
@@ -262,7 +265,8 @@
       flex-flow: row nowrap;
       transform: scale(1.2);
       transition: all 500ms;
-      z-index: 1; }
+      z-index: 1;
+      overflow: hidden; }
       .main-inicio .card3:hover .info-card3 {
         display: block;
         list-style: none; }
@@ -291,7 +295,8 @@
     background: #d4781c;
     background: linear-gradient(45deg, #d4781c 3%, #c8ef41 50%, #ff8901 100%); }
     .main-inicio .card4:hover {
-      grid-area: ca-3 ca-4;
+      overflow: hidden;
+      grid-area: ca-4;
       width: 95%;
       position: relative;
       display: flex;
