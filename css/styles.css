@@ -528,6 +528,9 @@
   padding-top: 10%;
   display: flex;
   flex-flow: column nowrap; }
+  .texto-opciones .ping img {
+    width: 10%;
+    padding-bottom: 1%; }
   .texto-opciones .texto-opciones-1 {
     border-radius: 1rem;
     display: flex;
@@ -541,6 +544,7 @@
       padding: 2%;
       -webkit-text-stroke: 3px black; }
     .texto-opciones .texto-opciones-1 h3 {
+      font-size: 3rem;
       align-self: center; }
     .texto-opciones .texto-opciones-1 img {
       width: 21%;

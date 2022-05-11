@@ -7,6 +7,12 @@
     padding-top: 10%;
     display: flex;
     flex-flow: column nowrap;
+    .ping{
+        img{
+            width: 10%;
+            padding-bottom: 1%;
+        }
+    }
         .texto-opciones-1{
         border-radius: 1rem;
         display: flex;
@@ -22,6 +28,8 @@
             -webkit-text-stroke: 3px black;
             }
             h3{
+                font-size: 3rem;
+
                 align-self: center;
                         }
             img{
