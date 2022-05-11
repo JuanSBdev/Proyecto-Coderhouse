@@ -1,19 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 @import "./variables";
+@keyframes load {
+    0% {
+   }
+20%{
+       transform:rotateY(360deg);
+   }
+    50% {
+        transform: rotateZ(30deg);
+   }
+    90%{
+        transform: rotateZ(-30deg);
+
+    }
+    100% {
+        margin-top: -2%;
+        margin-bottom: 2%;
+   }
+}
+
 
 .texto-opciones{
+    border-radius: 1rem;
     font-family: 'Koulen';
     grid-area: txt;
-    padding-top: 10%;
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    padding-right: 2%;
     display: flex;
     flex-flow: column nowrap;
+
     .ping{
+        
         img{
+
             width: 10%;
             padding-bottom: 1%;
+            animation: load 1.5s ease-out infinite;
+
         }
     }
         .texto-opciones-1{
+
         border-radius: 1rem;
         display: flex;
         flex-flow: column wrap;
