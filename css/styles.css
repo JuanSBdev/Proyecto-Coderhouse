@@ -101,14 +101,25 @@
           animation-iteration-count: 1; } }
 
 @media screen and (min-width: 576px) and (max-width: 765px) {
-  ul {
+  .header-index {
+    grid-area: header-i;
     width: 100%;
-    gap: 1rem;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around; } }
+    flex-flow: row wrap; }
+    .header-index nav {
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      margin-right: 10%; }
+      .header-index nav ul {
+        width: 100%;
+        gap: 1rem;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around; }
+      .header-index nav img {
+        width: 50%;
+        margin-left: 4%; } }
 
 @media screen and (min-width: 576px) {
   .main-index {
@@ -154,10 +165,13 @@
     gap: 2%;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2XBmGXjhP-DmvIv3Z9B_7LhUquAeP0C1Gw&usqp=CAU");
     background-repeat: cover;
-    margin-top: 20%; }
+    margin-top: 20%;
+    padding-bottom: 10%;
+    padding-bottom: 10%; }
     .main-inicio .card1 {
       grid-area: ca-1;
       width: 70%;
+      margin: 10%;
       padding: 2%;
       display: flex;
       flex-flow: column nowrap;
@@ -169,9 +183,10 @@
       background: #ffde00;
       background: linear-gradient(50deg, #ffde00 25%, #ffaa00 80%, #ff9c00 87%, #ff9200 94%, #ff6f00 100%); }
       .main-inicio .card1:hover {
-        grid-area: ca-1;
+        grid-column-start: ca-1;
+        grid-column-end: ca-2;
         position: block;
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -209,19 +224,22 @@
     .main-inicio .card2 {
       grid-area: ca-2;
       width: 70%;
+      margin: 10%;
       padding: 2%;
       display: flex;
       justify-content: center;
       align-content: center;
       align-items: center;
-      flex-flow: row-reverse wrap;
+      flex-flow: column nowrap;
       border: 2px solid black;
       border-radius: 1rem;
       background: #6a003e;
       background: linear-gradient(45deg, #6a003e 3%, #410575 26%, #3e1bdd 60%, #430287 82%, #870202 100%); }
       .main-inicio .card2:hover {
-        grid-area: ca-2;
-        width: 95%;
+        grid-column-start: ca-1;
+        grid-column-end: ca-2;
+        margin-left: 10%;
+        width: 80%;
         position: relative;
         display: flex;
         justify-content: center;
@@ -258,22 +276,9 @@
       border-radius: 1rem;
       background: #35b989;
       background: linear-gradient(45deg, #35b989 10%, #32db51 65%, #197252 90%); }
-      .main-inicio .card3:hover {
-        grid-area: ca-3;
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        flex-flow: row nowrap;
-        transform: scale(1.2);
-        transition: all 500ms;
-        z-index: 1;
-        overflow: hidden; }
-        .main-inicio .card3:hover .info-card3 {
-          display: block;
-          list-style: none; }
+      .main-inicio .card3:hover .info-card3 {
+        display: block;
+        list-style: none; }
       .main-inicio .card3 .burger3 {
         width: 100%;
         display: flex;
@@ -288,10 +293,10 @@
     .main-inicio .card4 {
       grid-area: ca-4;
       width: 70%;
+      margin: 10%;
       padding: 2%;
       display: flex;
       flex-flow: column nowrap;
-      position: relative;
       align-items: center;
       align-content: center;
       border: 2px solid black;
@@ -299,9 +304,12 @@
       background: #d4781c;
       background: linear-gradient(45deg, #d4781c 3%, #c8ef41 50%, #ff8901 100%); }
       .main-inicio .card4:hover {
-        overflow: hidden;
-        grid-area: ca-4;
-        width: 95%;
+        grid-row-start: ca-3;
+        grid-row-end: ca-4;
+        grid-column-start: ca-3;
+        grid-column-end: ca-4;
+        width: 80%;
+        margin-left: 10%;
         position: relative;
         display: flex;
         justify-content: center;
@@ -314,6 +322,8 @@
         .main-inicio .card4:hover .info-card4 {
           list-style: none;
           display: block; }
+        .main-inicio .card4:hover img {
+          width: 30%; }
       .main-inicio .card4 .burger4 {
         width: 100%;
         display: flex;
@@ -540,7 +550,7 @@
     grid-area: txt;
     margin-top: 10%;
     padding-top: 2%;
-    padding-bottom: 6%;
+    padding-bottom: 2%;
     padding-right: 2%;
     display: flex;
     flex-flow: column nowrap; }
@@ -714,14 +724,25 @@
           animation-iteration-count: 1; } }
 
 @media screen and (max-width: 576px) and (max-width: 765px) {
-  ul {
+  .header-index {
+    grid-area: header-i;
     width: 100%;
-    gap: 1rem;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around; } }
+    flex-flow: row wrap; }
+    .header-index nav {
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      margin-right: 10%; }
+      .header-index nav ul {
+        width: 100%;
+        gap: 1rem;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around; }
+      .header-index nav img {
+        width: 50%;
+        margin-left: 4%; } }
 
 @media screen and (max-width: 576px) {
   .main-inicio {
@@ -730,10 +751,11 @@
     display: grid;
     grid-template-areas: "ca-1" "ca-2" "ca-3" " ca-4";
     gap: 2%;
-    margin-top: 20%; }
+    margin-top: 20%;
+    padding-bottom: 40%; }
     .main-inicio .card1 {
       grid-area: ca-1;
-      width: 70%;
+      width: 90%;
       padding: 2%;
       display: flex;
       flex-flow: column nowrap;
@@ -762,12 +784,12 @@
         align-items: center; }
       .main-inicio .card1 .info-card {
         display: flex;
-        padding-top: 7%; }
+        padding-top: 5%; }
       .main-inicio .card1 img {
-        width: 50%; }
+        width: 80%; }
     .main-inicio .card2 {
       grid-area: ca-2;
-      width: 70%;
+      width: 90%;
       padding: 2%;
       display: flex;
       justify-content: center;
@@ -778,22 +800,6 @@
       border-radius: 1rem;
       background: #6a003e;
       background: linear-gradient(45deg, #6a003e 3%, #410575 26%, #3e1bdd 60%, #430287 82%, #870202 100%); }
-      .main-inicio .card2:hover {
-        grid-area: ca-2;
-        width: 95%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        flex-flow: row nowrap;
-        transform: scale(1.1);
-        transition: all 500ms;
-        z-index: 1;
-        overflow: hidden; }
-        .main-inicio .card2:hover .info-card2 {
-          list-style: none;
-          display: block; }
       .main-inicio .card2 .burger2 {
         width: 100%;
         display: flex;
@@ -801,12 +807,13 @@
         justify-content: center;
         align-items: center; }
       .main-inicio .card2 .info-card2 {
-        display: none; }
+        display: flex;
+        padding: 12%; }
       .main-inicio .card2 img {
-        width: 50%; }
+        width: 70%; }
     .main-inicio .card3 {
       grid-area: ca-3;
-      width: 70%;
+      width: 90%;
       padding: 2%;
       display: flex;
       flex-flow: column nowrap;
@@ -817,36 +824,21 @@
       border-radius: 1rem;
       background: #35b989;
       background: linear-gradient(45deg, #35b989 10%, #32db51 65%, #197252 90%); }
-      .main-inicio .card3:hover {
-        grid-area: ca-3;
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        flex-flow: row nowrap;
-        transform: scale(1.2);
-        transition: all 500ms;
-        z-index: 1;
-        overflow: hidden; }
-        .main-inicio .card3:hover .info-card3 {
-          display: block;
-          list-style: none; }
       .main-inicio .card3 .burger3 {
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        padding: 12%; }
       .main-inicio .card3 .info-card3 {
-        display: none; }
+        display: flex; }
       .main-inicio .card3 img {
-        padding-top: 10%;
-        width: 50%; }
+        width: 70%;
+        margin-top: -40%; }
     .main-inicio .card4 {
       grid-area: ca-4;
-      width: 70%;
+      width: 90%;
       padding: 2%;
       display: flex;
       flex-flow: column nowrap;
@@ -857,22 +849,6 @@
       border-radius: 1rem;
       background: #d4781c;
       background: linear-gradient(45deg, #d4781c 3%, #c8ef41 50%, #ff8901 100%); }
-      .main-inicio .card4:hover {
-        overflow: hidden;
-        grid-area: ca-4;
-        width: 95%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        flex-flow: row nowrap;
-        transform: scale(1.1);
-        transition: all 500ms;
-        z-index: 1; }
-        .main-inicio .card4:hover .info-card4 {
-          list-style: none;
-          display: block; }
       .main-inicio .card4 .burger4 {
         width: 100%;
         display: flex;
@@ -880,9 +856,12 @@
         justify-content: center;
         align-items: center; }
       .main-inicio .card4 .info-card4 {
-        display: none; }
+        padding: 5%;
+        display: flex;
+        list-style-type: none; }
       .main-inicio .card4 img {
-        width: 50%; }
+        width: 70%;
+        margin-top: -40%; }
   .carrusele {
     margin-top: 0%;
     grid-area: carrosa;
@@ -969,7 +948,7 @@
     grid-area: txt;
     margin-top: 10%;
     padding-top: 2%;
-    padding-bottom: 6%;
+    padding-bottom: 2%;
     padding-right: 2%;
     display: flex;
     flex-flow: column nowrap; }

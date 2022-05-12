@@ -54,12 +54,15 @@
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2XBmGXjhP-DmvIv3Z9B_7LhUquAeP0C1Gw&usqp=CAU");
         background-repeat: cover;
         margin-top:20%;
+        padding-bottom: 10%;
+        padding-bottom: 10%;
         
 
     .card1{
 
         grid-area: ca-1;
         width: 70%;
+        margin: 10%;
         padding: 2%;
         display: flex;
         flex-flow: column nowrap;
@@ -73,10 +76,10 @@
         
 
         &:hover{
-            grid-area: ca-1 ;
-
+            grid-column-start:  ca-1;
+            grid-column-end: ca-2;
             position:block;
-            width: 100%;
+            width: 80%;
             @include flex-centrar;
             @include row-no;
             transform: scale(1.1);
@@ -124,17 +127,20 @@
     .card2{
         grid-area: ca-2;
         width: 70%;
+        margin: 10%;
         padding: 2%;       
         @include flex-centrar;
-        flex-flow: row-reverse wrap;
+        flex-flow: column nowrap;
         border: 2px solid black;
         border-radius: 1rem; 
         background:  rgb(106,0,62);
         background: linear-gradient(45deg, rgba(106,0,62,1) 3%, rgba(65,5,117,1) 26%, rgba(62,27,221,1) 60%, rgba(67,2,135,1) 82%, rgba(135,2,2,1) 100%);
 
                 &:hover{
-                    grid-area: ca-2;
-                    width: 95%;
+                    grid-column-start:  ca-1;
+                    grid-column-end: ca-2;
+                    margin-left: 10%;
+                    width:80%;
                     position: relative;
                     @include flex-centrar;
                     flex-flow: row nowrap;
@@ -177,16 +183,7 @@
         border-radius: 1rem; 
         background: rgb(53,185,137);
         background: linear-gradient(45deg, rgba(53,185,137,1) 10%, rgba(50,219,81,1) 65%, rgba(25,114,82,1) 90%);
-                                        &:hover{
-                                            grid-area: ca-3;
-                                            position: relative;
-                                            width: 100%;
-                                            @include flex-centrar;
-                                            @include row-no;
-                                            transform: scale(1.2);
-                                            transition: all 500ms;
-                                            z-index: 1;
-                                            overflow: hidden;
+            &:hover{
 
             .info-card3{
                 display: block;
@@ -214,10 +211,10 @@
     .card4{
         grid-area: ca-4;
         width: 70%;
+        margin: 10%;
         padding: 2%;
         display: flex;
         flex-flow: column nowrap;
-        position: relative;
         align-items: center;
         align-content: center;       
         border: 2px solid black;
@@ -225,19 +222,27 @@
         background: rgb(212,120,28);
 background: linear-gradient(45deg, rgba(212,120,28,1) 3%, rgba(200,239,65,1) 50%, rgba(255,137,1,1) 100%);
             &:hover{
-                overflow: hidden;
-            grid-area:  ca-4;
-            width: 95%;
+                grid-row-start: ca-3;
+                grid-row-end: ca-4;
+
+                grid-column-start:  ca-3;
+                
+                grid-column-end: ca-4;
+                width: 80%;
+                margin-left: 10%;
                 position: relative;
                 @include flex-centrar;
                 flex-flow: row nowrap;
                 transform: scale(1.1);
                 transition: all 500ms;
-
                 z-index: 1;
+                
                 .info-card4{
                     list-style: none;
                     display: block;                    
+                }
+                img{
+                    width: 30%;
                 }
     
             }
