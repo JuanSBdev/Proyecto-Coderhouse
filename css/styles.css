@@ -167,7 +167,8 @@
     background-repeat: cover;
     margin-top: 20%;
     padding-bottom: 10%;
-    padding-top: 10%; }
+    padding-top: 10%;
+    overflow: visible; }
     .main-inicio .card1 {
       grid-area: ca-1;
       width: 70%;
@@ -187,12 +188,12 @@
         grid-column-end: ca-2;
         position: block;
         width: 80%;
+        margin: 0%;
         display: flex;
         justify-content: center;
         align-content: center;
         align-items: center;
         flex-flow: row nowrap;
-        transform: scale(1.1);
         transition: all 500ms;
         backdrop-filter: blur(5px);
         overflow: hidden;
@@ -236,17 +237,19 @@
       background: #6a003e;
       background: linear-gradient(45deg, #6a003e 3%, #410575 26%, #3e1bdd 60%, #430287 82%, #870202 100%); }
       .main-inicio .card2:hover {
+        grid-row-start: ca-1;
+        grid-row-end: ca-2;
         grid-column-start: ca-1;
         grid-column-end: ca-2;
-        margin-left: 10%;
         width: 80%;
+        margin: 5%;
+        margin-left: 10%;
         position: relative;
         display: flex;
         justify-content: center;
         align-content: center;
         align-items: center;
         flex-flow: row nowrap;
-        transform: scale(1.1);
         transition: all 500ms;
         z-index: 1;
         overflow: hidden; }
@@ -278,10 +281,12 @@
       background: #35b989;
       background: linear-gradient(45deg, #35b989 10%, #32db51 65%, #197252 90%); }
       .main-inicio .card3:hover {
-        grid-column-start: ca-1;
-        grid-column-end: ca-2;
+        grid-column-start: ca-3;
+        grid-column-end: ca-4;
         position: block;
         width: 80%;
+        margin: 0%;
+        margin-left: 10%;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -325,6 +330,7 @@
         grid-column-start: ca-3;
         grid-column-end: ca-4;
         width: 80%;
+        margin: 5%;
         margin-left: 10%;
         position: relative;
         display: flex;
@@ -334,7 +340,8 @@
         flex-flow: row nowrap;
         transform: scale(1.1);
         transition: all 500ms;
-        z-index: 1; }
+        z-index: 1;
+        overflow: hidden; }
         .main-inicio .card4:hover .info-card4 {
           list-style: none;
           display: block; }
