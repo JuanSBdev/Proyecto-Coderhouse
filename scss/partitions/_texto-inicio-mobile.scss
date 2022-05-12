@@ -1,11 +1,18 @@
 .texto-opciones{
-    margin-top: 30%;
+    margin-top: 20%;
+    margin-bottom: 30%;
+    margin-left: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
     .uno{
     .mapa{
-        iframe{
-            display: none;
+        display: flex;
 
-        }
+        justify-content: center;
+
+        
     }
     }
 }
