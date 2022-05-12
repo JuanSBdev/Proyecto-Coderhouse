@@ -167,7 +167,7 @@
     background-repeat: cover;
     margin-top: 20%;
     padding-bottom: 10%;
-    padding-bottom: 10%; }
+    padding-top: 10%; }
     .main-inicio .card1 {
       grid-area: ca-1;
       width: 70%;
@@ -266,6 +266,7 @@
     .main-inicio .card3 {
       grid-area: ca-3;
       width: 70%;
+      margin: 10%;
       padding: 2%;
       display: flex;
       flex-flow: column nowrap;
@@ -276,9 +277,24 @@
       border-radius: 1rem;
       background: #35b989;
       background: linear-gradient(45deg, #35b989 10%, #32db51 65%, #197252 90%); }
-      .main-inicio .card3:hover .info-card3 {
-        display: block;
-        list-style: none; }
+      .main-inicio .card3:hover {
+        grid-column-start: ca-1;
+        grid-column-end: ca-2;
+        position: block;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        transform: scale(1.1);
+        transition: all 500ms;
+        backdrop-filter: blur(5px);
+        overflow: hidden;
+        z-index: 1; }
+        .main-inicio .card3:hover .info-card3 {
+          display: block;
+          list-style: none; }
       .main-inicio .card3 .burger3 {
         width: 100%;
         display: flex;
