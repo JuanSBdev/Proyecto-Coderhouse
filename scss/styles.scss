@@ -1,6 +1,6 @@
 
 
-@media  screen and (min-width:576px) {
+@media  screen and (min-width:721px) {
     @import "partitions/body";
 @import "partitions/header";
 @import "partitions/main";
@@ -11,7 +11,7 @@
 @import "partitions/login";
 
 }
-@media  screen and (max-width:576px) {
+@media  screen and (max-width:720px) {
     @import "partitions/body";
     @import "partitions/header";
     @import "partitions/mainmob";

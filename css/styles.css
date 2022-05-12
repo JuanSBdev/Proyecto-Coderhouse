@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 721px) {
   @keyframes swing {
     15% {
       -webkit-transform: translateX(5px);
@@ -100,7 +100,7 @@
           -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1; } }
 
-@media screen and (min-width: 576px) and (max-width: 765px) {
+@media screen and (min-width: 721px) and (max-width: 765px) {
   .header-index {
     grid-area: header-i;
     width: 100%;
@@ -121,7 +121,7 @@
         width: 40%;
         margin-left: 4%; } }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 721px) {
   .main-index {
     grid-area: main-i;
     width: 100%;
@@ -638,7 +638,7 @@
     grid-area: cont;
     margin-top: 10%; } }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   @keyframes swing {
     15% {
       -webkit-transform: translateX(5px);
@@ -738,7 +738,7 @@
           -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1; } }
 
-@media screen and (max-width: 576px) and (max-width: 765px) {
+@media screen and (max-width: 720px) and (max-width: 765px) {
   .header-index {
     grid-area: header-i;
     width: 100%;
@@ -759,7 +759,7 @@
         width: 40%;
         margin-left: 4%; } }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .main-index {
     grid-area: main-i;
     width: 90%;
