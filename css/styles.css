@@ -760,6 +760,42 @@
         margin-left: 4%; } }
 
 @media screen and (max-width: 576px) {
+  .main-index {
+    grid-area: main-i;
+    width: 90%;
+    margin-top: 50%;
+    margin-bottom: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+    .main-index .titulo {
+      padding-bottom: 30%; }
+      .main-index .titulo h1 {
+        font-size: 3rem; }
+    .main-index .buscador {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: center; }
+      .main-index .buscador .input-localizacion {
+        display: flex;
+        border: 2px solid #ffa322;
+        width: 60%;
+        height: 55px;
+        border-radius: 1rem;
+        background: white; }
+      .main-index .buscador ion-icon {
+        padding: 1%;
+        font-size: 230%;
+        color: #ffa322;
+        border: 4px solid black;
+        border-radius: 1rem;
+        color: black; }
+      .main-index .buscador .boton-buscador {
+        background-color: #ffa322;
+        border: 2px solid black; }
   .main-inicio {
     grid-area: main;
     width: 100%;
