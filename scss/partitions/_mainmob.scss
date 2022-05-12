@@ -1,0 +1,198 @@
+.main-inicio{
+    grid-area: main;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "ca-1"
+    "ca-2"
+    "ca-3"
+    " ca-4";
+    gap: 2%;
+    margin-top:20%;
+    
+
+.card1{
+
+    grid-area: ca-1;
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    align-content: center;      
+    border: 2px solid #564f1d84;
+    border-radius: 1rem; 
+    background: rgb(255,222,0);
+    background: linear-gradient(50deg, rgba(255,222,0,1) 25%, rgba(255,170,0,1) 80%, rgba(255,156,0,1) 87%, rgba(255,146,0,1) 94%, rgba(255,111,0,1) 100%);
+
+    
+    .oferta{
+        display: flex;
+        align-self: flex-start;
+        border-radius: 1rem;
+        background: rgb(255,99,37);
+        background: linear-gradient(50deg, rgba(255,99,37,1) 37%, rgba(241,236,52,1) 100%);
+        -webkit-animation: swing 2s ease;
+        animation: swing 2s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;     
+    }
+    .burger1{
+        width: 100%;
+        display: flex;
+        @include col-no;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-card{
+        display: flex;
+        padding-top: 7%;
+    }
+        img{
+            width: 50%;
+        }
+        
+            
+    
+        }
+
+
+.card2{
+    grid-area: ca-2;
+    width: 70%;
+    padding: 2%;       
+    @include flex-centrar;
+    flex-flow: row-reverse wrap;
+    border: 2px solid black;
+    border-radius: 1rem; 
+    background:  rgb(106,0,62);
+    background: linear-gradient(45deg, rgba(106,0,62,1) 3%, rgba(65,5,117,1) 26%, rgba(62,27,221,1) 60%, rgba(67,2,135,1) 82%, rgba(135,2,2,1) 100%);
+
+            &:hover{
+                grid-area: ca-2;
+                width: 95%;
+                position: relative;
+                @include flex-centrar;
+                flex-flow: row nowrap;
+                transform: scale(1.1);
+                transition: all 500ms;
+                z-index: 1;
+                overflow: hidden;
+
+                .info-card2{
+                    list-style: none;
+                    display: block;                    
+            }
+
+        }
+        .burger2{
+            width: 100%;
+            display: flex;
+            @include col-no;
+            justify-content: center;
+            align-items: center;
+        }
+        .info-card2{
+            display: none;
+        }
+        img{
+            width: 50%;
+        }
+
+}
+.card3{
+    grid-area: ca-3;
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    align-content: center;        
+    border: 2px solid black;
+    border-radius: 1rem; 
+    background: rgb(53,185,137);
+    background: linear-gradient(45deg, rgba(53,185,137,1) 10%, rgba(50,219,81,1) 65%, rgba(25,114,82,1) 90%);
+                                    &:hover{
+                                        grid-area: ca-3;
+                                        position: relative;
+                                        width: 100%;
+                                        @include flex-centrar;
+                                        @include row-no;
+                                        transform: scale(1.2);
+                                        transition: all 500ms;
+                                        z-index: 1;
+                                        overflow: hidden;
+
+        .info-card3{
+            display: block;
+            list-style: none;
+
+        }
+
+    }
+    .burger3{
+        width: 100%;
+        display: flex;
+        @include col-no;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-card3{
+        display: none;
+    }
+        img{
+            padding-top:10% ;
+            width: 50%;
+        }
+
+}
+.card4{
+    grid-area: ca-4;
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    align-content: center;       
+    border: 2px solid black;
+    border-radius: 1rem; 
+    background: rgb(212,120,28);
+background: linear-gradient(45deg, rgba(212,120,28,1) 3%, rgba(200,239,65,1) 50%, rgba(255,137,1,1) 100%);
+        &:hover{
+            overflow: hidden;
+        grid-area:  ca-4;
+        width: 95%;
+            position: relative;
+            @include flex-centrar;
+            flex-flow: row nowrap;
+            transform: scale(1.1);
+            transition: all 500ms;
+
+            z-index: 1;
+            .info-card4{
+                list-style: none;
+                display: block;                    
+            }
+
+        }
+        .burger4{
+            width: 100%;
+            display: flex;
+            @include col-no;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .info-card4{
+            display: none;
+        }
+        img{
+            width: 50%;
+        }
+
+}
+
+
+}

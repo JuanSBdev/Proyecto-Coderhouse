@@ -1,10 +1,25 @@
 
-@import "partitions/body";
+
+@media  screen and (min-width:576px) {
+    @import "partitions/body";
 @import "partitions/header";
 @import "partitions/main";
+@import "partitions/carrusel";
 @import "partitions/footer";
 @import "partitions/texto-inicio";
 @import "partitions/variables";
-@import "partitions/login"
+@import "partitions/login";
 
+}
+@media  screen and (max-width:576px) {
+    @import "partitions/body";
+@import "partitions/header";
+@import "partitions/mainmob";
+@import "partitions/carrusel";
+@import "partitions/footer";
+@import "partitions/texto-inicio";
+@import "partitions/variables";
+@import "partitions/login";
+
+}
 

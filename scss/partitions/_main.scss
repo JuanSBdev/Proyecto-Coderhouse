@@ -46,14 +46,13 @@
 
     .main-inicio{
         grid-area: main;
+        width: 100%;
         display: grid;
         grid-template-areas: "ca-1 ca-2"
         "ca-3 ca-4";
         gap: 2%;
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2XBmGXjhP-DmvIv3Z9B_7LhUquAeP0C1Gw&usqp=CAU");
         background-repeat: cover;
-        padding:10%;
-        padding-left: 15%;
         margin-top:20%;
         
 
@@ -259,59 +258,14 @@ background: linear-gradient(45deg, rgba(212,120,28,1) 3%, rgba(200,239,65,1) 50%
 
     }
     
-
-}
-.carrusele{
-    margin-top: 0%;
-    grid-area: carrosa;
-    padding: 10%;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    h3{
-        font-size: 3rem;
-        -webkit-text-stroke: 2px black;
-        color: map-get($colores, color2);
-    }
     
-    .burger-car-3{
-        display: flex;
-        flex-flow: row-reverse nowrap;
-        justify-content: space-evenly;
-        align-content: center;
-        align-items: center;
-                .texto-burger-3{
-            padding-left: 20%;
-            padding-right: 2%;
-                    
-        }
-        
-
-    }
-    button{
-        background-color: transparent;
-    }
-    
-    img{
-        padding-top: 10%;
-        margin-left: 20%;
-        max-width: 40%;
-        max-height: 20%;
-        object-fit: contain;
-       
-        
-    }
-    .img-pollo{
-        margin-top: -12%;
-    }
-    .img-veggie{
-        padding-top: 10%;
-
-    }
 }
+
+
+
+
+
+
 
 
 
