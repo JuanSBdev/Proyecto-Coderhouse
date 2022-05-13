@@ -44,42 +44,29 @@
   .body-index {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i"
- "main-i"
- "footer-i";
+    grid-template-areas: "header-i" "main-i" "footer-i";
     background-image: url("https://t4.ftcdn.net/jpg/04/77/41/49/360_F_477414972_fCT8rvCa1KxIq0g9p51GmcRiQhl2PSvi.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
   .body-inicio {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i"
- "txt"
- "main"
- "txt-2" 
- "carrosa"
- "footer-o";
+    grid-template-areas: "header-i" "txt" "main" "txt-2"  "carrosa" "footer-o";
     gap: 2rem;
     background: #edfb3f;
     background: radial-gradient(circle, #edfb3f 0%, #fca446 95%, #fc4646 99%); }
   .body-about {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i"
- "main-a"
- "footer-a";
+    grid-template-areas: "header-i" "main-a" "footer-a";
     gap: 12rem; }
   .body-pagos {
     display: grid;
-    grid-template-areas: "header-i"
- "contenido"
- "footer-2";
+    grid-template-areas: "header-i" "contenido" "footer-2";
     width: 100%; }
   .body-login {
     display: grid;
-    grid-template-areas: "header-i"
- "cont"
- "footer-i";
+    grid-template-areas: "header-i" "cont" "footer-o";
     width: 100%; }
   .header-index {
     grid-area: header-i;
@@ -174,8 +161,7 @@
     grid-area: main;
     width: 100%;
     display: grid;
-    grid-template-areas: "ca-1 ca-2"
- "ca-3 ca-4";
+    grid-template-areas: "ca-1 ca-2" "ca-3 ca-4";
     gap: 2%;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2XBmGXjhP-DmvIv3Z9B_7LhUquAeP0C1Gw&usqp=CAU");
     background-repeat: cover;
@@ -538,11 +524,24 @@
       padding-top: 10%; }
   .footer-index {
     grid-area: footer-i;
+    display: flex;
+    justify-content: center;
     margin-top: 10%;
+    width: 90%;
     color: black; }
   .footer-inicio {
     grid-area: footer-o;
-    margin-top: 5rem; }
+    margin-top: 6rem;
+    position: static;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 5%; }
+    .footer-inicio .fac {
+      width: 30%;
+      display: flex;
+      justify-content: space-around; }
   .footer-about {
     grid-area: footer-a;
     width: 100%;
@@ -569,7 +568,19 @@
     margin-top: 3rem;
     background-color: #ffa322;
     padding: 2%;
-    margin-bottom: 4%; }
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: end; }
+    .footer-pagos .parrafooter {
+      display: flex;
+      justify-self: end; }
+    .footer-pagos .fac {
+      width: 50%;
+      display: flex;
+      justify-self: flex-start; }
+      .footer-pagos .fac img {
+        display: flex;
+        justify-content: space-around; }
   @keyframes load {
     0% { }
     20% {
@@ -696,42 +707,29 @@
   .body-index {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i"
- "main-i"
- "footer-i";
+    grid-template-areas: "header-i" "main-i" "footer-i";
     background-image: url("https://t4.ftcdn.net/jpg/04/77/41/49/360_F_477414972_fCT8rvCa1KxIq0g9p51GmcRiQhl2PSvi.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
   .body-inicio {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i"
- "txt"
- "main"
- "txt-2" 
- "carrosa"
- "footer-o";
+    grid-template-areas: "header-i" "txt" "main" "txt-2"  "carrosa" "footer-o";
     gap: 2rem;
     background: #edfb3f;
     background: radial-gradient(circle, #edfb3f 0%, #fca446 95%, #fc4646 99%); }
   .body-about {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i"
- "main-a"
- "footer-a";
+    grid-template-areas: "header-i" "main-a" "footer-a";
     gap: 12rem; }
   .body-pagos {
     display: grid;
-    grid-template-areas: "header-i"
- "contenido"
- "footer-2";
+    grid-template-areas: "header-i" "contenido" "footer-2";
     width: 100%; }
   .body-login {
     display: grid;
-    grid-template-areas: "header-i"
- "cont"
- "footer-i";
+    grid-template-areas: "header-i" "cont" "footer-o";
     width: 100%; }
   .header-index {
     grid-area: header-i;
@@ -827,10 +825,7 @@
     grid-area: main;
     width: 100%;
     display: grid;
-    grid-template-areas: "ca-1"
- "ca-2"
- "ca-3"
- " ca-4";
+    grid-template-areas: "ca-1" "ca-2" "ca-3" " ca-4";
     gap: 2%;
     margin-top: 20%;
     padding-bottom: 40%;
@@ -847,7 +842,8 @@
       border: 2px solid #564f1d84;
       border-radius: 1rem;
       background: #ffde00;
-      background: linear-gradient(50deg, #ffde00 25%, #ffaa00 80%, #ff9c00 87%, #ff9200 94%, #ff6f00 100%); }
+      background: linear-gradient(50deg, #ffde00 25%, #ffaa00 80%, #ff9c00 87%, #ff9200 94%, #ff6f00 100%);
+      list-style-type: none; }
       .main-inicio .card1 .oferta {
         display: flex;
         align-self: flex-start;
@@ -881,7 +877,8 @@
       border: 2px solid black;
       border-radius: 1rem;
       background: #6a003e;
-      background: linear-gradient(45deg, #6a003e 3%, #410575 26%, #3e1bdd 60%, #430287 82%, #870202 100%); }
+      background: linear-gradient(45deg, #6a003e 3%, #410575 26%, #3e1bdd 60%, #430287 82%, #870202 100%);
+      list-style-type: none; }
       .main-inicio .card2 .burger2 {
         width: 100%;
         display: flex;
@@ -912,7 +909,8 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        padding: 12%; }
+        padding: 12%;
+        list-style-type: none; }
       .main-inicio .card3 .info-card3 {
         display: flex; }
       .main-inicio .card3 img {
@@ -930,7 +928,8 @@
       border: 2px solid black;
       border-radius: 1rem;
       background: #d4781c;
-      background: linear-gradient(45deg, #d4781c 3%, #c8ef41 50%, #ff8901 100%); }
+      background: linear-gradient(45deg, #d4781c 3%, #c8ef41 50%, #ff8901 100%);
+      list-style-type: none; }
       .main-inicio .card4 .burger4 {
         width: 100%;
         display: flex;
@@ -977,6 +976,97 @@
         width: 90%;
         padding: 10%;
         border-radius: 1rem; }
+  .main-pagos {
+    display: grid;
+    grid-area: contenido;
+    grid-template-areas: "productos " "pagos";
+    width: 100%; }
+    .main-pagos .section-form-pagos {
+      margin-top: 16%;
+      grid-area: pagos;
+      width: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: flex-end; }
+      .main-pagos .section-form-pagos img {
+        width: 70%; }
+      .main-pagos .section-form-pagos h2 {
+        color: #ffa322;
+        font-size: 2rem; }
+      .main-pagos .section-form-pagos form {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center; }
+        .main-pagos .section-form-pagos form input {
+          border-radius: 1rem; }
+      .main-pagos .section-form-pagos ul {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: 1rem; }
+        .main-pagos .section-form-pagos ul li {
+          padding-left: 10rem;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-content: center;
+          align-items: center; }
+          .main-pagos .section-form-pagos ul li a {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background-color: #942a2a;
+            border: 12px solid #d26439;
+            border-radius: 2rem;
+            text-decoration: none;
+            color: yellow; }
+    .main-pagos .section-productos-pagos {
+      grid-area: productos;
+      width: 100%;
+      margin-top: 10rem;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      margin-left: 2rem; }
+      .main-pagos .section-productos-pagos img {
+        width: 20%; }
+      .main-pagos .section-productos-pagos h2 {
+        color: #ffa322;
+        font-size: 5rem; }
+      .main-pagos .section-productos-pagos ul {
+        margin: 15%;
+        display: flex;
+        flex-flow: column nowrap;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center; }
+        .main-pagos .section-productos-pagos ul li {
+          display: flex;
+          flex-flow: column nowrap;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center; }
+          .main-pagos .section-productos-pagos ul li a {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background-color: #ffa322;
+            border: 2px solid #FFC300;
+            border-radius: 2rem;
+            text-decoration: none;
+            color: #fff; }
   .carrusele {
     margin-top: 0%;
     grid-area: carrosa;
@@ -1014,11 +1104,24 @@
       padding-top: 10%; }
   .footer-index {
     grid-area: footer-i;
+    display: flex;
+    justify-content: center;
     margin-top: 10%;
+    width: 90%;
     color: black; }
   .footer-inicio {
     grid-area: footer-o;
-    margin-top: 5rem; }
+    margin-top: 6rem;
+    position: static;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 5%; }
+    .footer-inicio .fac {
+      width: 30%;
+      display: flex;
+      justify-content: space-around; }
   .footer-about {
     grid-area: footer-a;
     width: 100%;
@@ -1045,7 +1148,19 @@
     margin-top: 3rem;
     background-color: #ffa322;
     padding: 2%;
-    margin-bottom: 4%; }
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: end; }
+    .footer-pagos .parrafooter {
+      display: flex;
+      justify-self: end; }
+    .footer-pagos .fac {
+      width: 50%;
+      display: flex;
+      justify-self: flex-start; }
+      .footer-pagos .fac img {
+        display: flex;
+        justify-content: space-around; }
   @keyframes load {
     0% { }
     20% {

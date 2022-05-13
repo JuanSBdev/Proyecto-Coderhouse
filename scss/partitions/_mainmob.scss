@@ -75,7 +75,7 @@
     border-radius: 1rem; 
     background: rgb(255,222,0);
     background: linear-gradient(50deg, rgba(255,222,0,1) 25%, rgba(255,170,0,1) 80%, rgba(255,156,0,1) 87%, rgba(255,146,0,1) 94%, rgba(255,111,0,1) 100%);
-
+    list-style-type: none;
     
     .oferta{
         display: flex;
@@ -107,7 +107,7 @@
     
         }
 
-
+//mejorar visibilidad
 .card2{
     grid-area: ca-2;
     width: 90%;
@@ -116,8 +116,9 @@
     flex-flow: row-reverse wrap;
     border: 2px solid black;
     border-radius: 1rem; 
-    background:  rgb(106,0,62);
+    background:  rgb(106,0,62); 
     background: linear-gradient(45deg, rgba(106,0,62,1) 3%, rgba(65,5,117,1) 26%, rgba(62,27,221,1) 60%, rgba(67,2,135,1) 82%, rgba(135,2,2,1) 100%);
+    list-style-type: none;
 
         .burger2{
             width: 100%;
@@ -158,6 +159,8 @@
         justify-content: center;
         align-items: center;
         padding: 12%;
+            list-style-type: none;
+
     }
     .info-card3{
         display: flex;
@@ -182,7 +185,8 @@
     border-radius: 1rem; 
     background: rgb(212,120,28);
 background: linear-gradient(45deg, rgba(212,120,28,1) 3%, rgba(200,239,65,1) 50%, rgba(255,137,1,1) 100%);
-       
+list-style-type: none;
+
         .burger4{
             width: 100%;
             display: flex;
@@ -247,5 +251,112 @@ background: linear-gradient(45deg, rgba(212,120,28,1) 3%, rgba(200,239,65,1) 50%
             border-radius: 1rem;
         }
     }
-   
+}
+
+
+
+
+
+
+.main-pagos{
+    display: grid;
+    grid-area: contenido;
+    grid-template-areas: "productos "
+    "pagos";
+    width: 100%;
+    .section-form-pagos{ 
+        margin-top: 16%;
+        grid-area: pagos;
+        width: 100%;
+        display: flex;
+        flex-flow:column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-end;
+
+        img{
+            width: 70%;
+        }
+        h2{
+            color: map-get($colores, color2);
+            font-size: 2rem;
+        }
+        form {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            input{
+                border-radius: 1rem ;
+            }
+        }
+        ul{
+            display:flex ;
+            flex-flow: column nowrap;
+            justify-content: center;
+            gap: 1rem;
+            li{
+                padding-left: 10rem;
+                display:flex ;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                a{
+                    display:flex ;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    background-color:#942a2a;
+                    border: 12px solid #d26439;
+                    border-radius: 2rem;
+                    text-decoration: none;
+                    color: yellow;
+            }
+        }
+    }
+    
+}
+.section-productos-pagos{
+    grid-area: productos;
+    width: 100%;
+    margin-top: 10rem;
+    display:flex ;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 2rem;
+    img{
+        width: 20%;
+    }
+        h2{
+            color:map-get($colores, color2);
+            font-size: 5rem;
+        }
+        ul{margin: 15%;
+            display:flex ;
+            flex-flow: column nowrap;
+            @include flex-centrar;
+            li{
+                display:flex ;
+                flex-flow: column nowrap;
+                @include flex-centrar;
+                a{
+                    display:flex ;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    background-color:map-get($colores, color2);
+                    border: 2px solid map-get($colores, color1);
+                    border-radius: 2rem;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+}
 }

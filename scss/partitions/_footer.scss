@@ -1,11 +1,28 @@
 .footer-index{
     grid-area: footer-i;
+    display: flex;
+    justify-content: center;
     margin-top: 10%;
+    width: 90%;
     color:black
 }
 .footer-inicio{
     grid-area: footer-o;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    position:static;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 5%;
+    
+    .fac{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
 }
 
 .footer-about{
@@ -40,4 +57,21 @@
         background-color: map-get($colores, color2);
         padding: 2%;
         margin-bottom: 4%;
+        display: flex;
+        justify-content: end;
+        .parrafooter{
+            display: flex;
+            justify-self: end;
+        }
+        .fac{
+            width: 50%;
+
+            display: flex;
+            justify-self: flex-start;
+            img{
+                display: flex;
+                justify-content: space-around;
+    
+            }
+        }
     }
