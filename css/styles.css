@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 720px) {
   @keyframes swing {
     15% {
       -webkit-transform: translateX(5px);
@@ -44,29 +44,42 @@
   .body-index {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i" "main-i" "footer-i";
+    grid-template-areas: "header-i"
+ "main-i"
+ "footer-i";
     background-image: url("https://t4.ftcdn.net/jpg/04/77/41/49/360_F_477414972_fCT8rvCa1KxIq0g9p51GmcRiQhl2PSvi.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
   .body-inicio {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i" "txt" "main" "txt-2"  "carrosa" "footer-o";
+    grid-template-areas: "header-i"
+ "txt"
+ "main"
+ "txt-2" 
+ "carrosa"
+ "footer-o";
     gap: 2rem;
     background: #edfb3f;
     background: radial-gradient(circle, #edfb3f 0%, #fca446 95%, #fc4646 99%); }
   .body-about {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i" "main-a" "footer-a";
+    grid-template-areas: "header-i"
+ "main-a"
+ "footer-a";
     gap: 12rem; }
   .body-pagos {
     display: grid;
-    grid-template-areas: "header-i" "contenido" "footer-2";
+    grid-template-areas: "header-i"
+ "contenido"
+ "footer-2";
     width: 100%; }
   .body-login {
     display: grid;
-    grid-template-areas: "header-i" "cont" "footer-i";
+    grid-template-areas: "header-i"
+ "cont"
+ "footer-i";
     width: 100%; }
   .header-index {
     grid-area: header-i;
@@ -100,7 +113,7 @@
           -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1; } }
 
-@media screen and (min-width: 721px) and (max-width: 765px) {
+@media screen and (min-width: 720px) and (max-width: 765px) {
   .header-index {
     grid-area: header-i;
     width: 100%;
@@ -121,7 +134,7 @@
         width: 40%;
         margin-left: 4%; } }
 
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 720px) {
   .main-index {
     grid-area: main-i;
     width: 100%;
@@ -161,7 +174,8 @@
     grid-area: main;
     width: 100%;
     display: grid;
-    grid-template-areas: "ca-1 ca-2" "ca-3 ca-4";
+    grid-template-areas: "ca-1 ca-2"
+ "ca-3 ca-4";
     gap: 2%;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2XBmGXjhP-DmvIv3Z9B_7LhUquAeP0C1Gw&usqp=CAU");
     background-repeat: cover;
@@ -682,29 +696,42 @@
   .body-index {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i" "main-i" "footer-i";
+    grid-template-areas: "header-i"
+ "main-i"
+ "footer-i";
     background-image: url("https://t4.ftcdn.net/jpg/04/77/41/49/360_F_477414972_fCT8rvCa1KxIq0g9p51GmcRiQhl2PSvi.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
   .body-inicio {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i" "txt" "main" "txt-2"  "carrosa" "footer-o";
+    grid-template-areas: "header-i"
+ "txt"
+ "main"
+ "txt-2" 
+ "carrosa"
+ "footer-o";
     gap: 2rem;
     background: #edfb3f;
     background: radial-gradient(circle, #edfb3f 0%, #fca446 95%, #fc4646 99%); }
   .body-about {
     width: 100%;
     display: grid;
-    grid-template-areas: "header-i" "main-a" "footer-a";
+    grid-template-areas: "header-i"
+ "main-a"
+ "footer-a";
     gap: 12rem; }
   .body-pagos {
     display: grid;
-    grid-template-areas: "header-i" "contenido" "footer-2";
+    grid-template-areas: "header-i"
+ "contenido"
+ "footer-2";
     width: 100%; }
   .body-login {
     display: grid;
-    grid-template-areas: "header-i" "cont" "footer-i";
+    grid-template-areas: "header-i"
+ "cont"
+ "footer-i";
     width: 100%; }
   .header-index {
     grid-area: header-i;
@@ -800,7 +827,10 @@
     grid-area: main;
     width: 100%;
     display: grid;
-    grid-template-areas: "ca-1" "ca-2" "ca-3" " ca-4";
+    grid-template-areas: "ca-1"
+ "ca-2"
+ "ca-3"
+ " ca-4";
     gap: 2%;
     margin-top: 20%;
     padding-bottom: 40%;
