@@ -2,8 +2,8 @@
 
 .main-index{
     grid-area: main-i;
-    width: 90%;
-    margin-top: 50%;
+    width: 100%;
+    margin-top: 70%;
     margin-bottom: 40%;
     display: flex;
     flex-flow: column nowrap;
@@ -16,31 +16,30 @@
         }     
     }
     .buscador{
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
-        .input-localizacion{
-            display: flex;
-            border: 2px solid map-get($colores, color2);
-            width: 60%;
-            height: 55px;
-            border-radius: 1rem;
-            background: white;
-        }
-        ion-icon{
-            padding: 1%;
-            font-size:230% ;
-            color: map-get($colores, color2);
-            border: 4px solid black;
-            border-radius: 1rem;
-            color: black;
-        }
-        .boton-buscador{
-            background-color: map-get($colores, color2);
-            border: 2px solid black;
-        }
+            .input-localizacion{
+                display: flex;
+                border: 2px solid map-get($colores, color2);
+                width: 260%;
+                height: 55px;
+                border-radius: 1rem;
+                background: white;
+            }
+            ion-icon{
+                font-size:230% ;
+                color: map-get($colores, color2);
+                border: 4px solid black;
+                border-radius: 1rem;
+                color: black;
+            }
+            .boton-buscador{
+                background-color: map-get($colores, color2);
+                border: 2px solid black;
+            }
     }
 
 }

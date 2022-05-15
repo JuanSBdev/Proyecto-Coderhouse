@@ -787,8 +787,8 @@
 @media screen and (max-width: 720px) {
   .main-index {
     grid-area: main-i;
-    width: 90%;
-    margin-top: 50%;
+    width: 100%;
+    margin-top: 70%;
     margin-bottom: 40%;
     display: flex;
     flex-flow: column nowrap;
@@ -799,7 +799,7 @@
       .main-index .titulo h1 {
         font-size: 3rem; }
     .main-index .buscador {
-      width: 100%;
+      width: 90%;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
@@ -807,12 +807,11 @@
       .main-index .buscador .input-localizacion {
         display: flex;
         border: 2px solid #ffa322;
-        width: 60%;
+        width: 260%;
         height: 55px;
         border-radius: 1rem;
         background: white; }
       .main-index .buscador ion-icon {
-        padding: 1%;
         font-size: 230%;
         color: #ffa322;
         border: 4px solid black;
@@ -1102,65 +1101,6 @@
       margin-top: -12%; }
     .carrusele .img-veggie {
       padding-top: 10%; }
-  .footer-index {
-    grid-area: footer-i;
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-    width: 90%;
-    color: black; }
-  .footer-inicio {
-    grid-area: footer-o;
-    margin-top: 6rem;
-    position: static;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 2rem;
-    padding-bottom: 5%; }
-    .footer-inicio .fac {
-      width: 30%;
-      display: flex;
-      justify-content: space-around; }
-  .footer-about {
-    grid-area: footer-a;
-    width: 100%;
-    margin-bottom: 6%;
-    background-color: #ffa322;
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: center;
-    align-items: center; }
-    .footer-about h3 {
-      margin-top: 2%; }
-    .footer-about .footer-about-contact {
-      padding: 2%;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-evenly; }
-      .footer-about .footer-about-contact img {
-        width: 10%; }
-        .footer-about .footer-about-contact img:hover {
-          transform: scale(1.3);
-          transition: ease all 500ms; }
-  .footer-pagos {
-    grid-area: footer-2;
-    margin-top: 3rem;
-    background-color: #ffa322;
-    padding: 2%;
-    margin-bottom: 4%;
-    display: flex;
-    justify-content: end; }
-    .footer-pagos .parrafooter {
-      display: flex;
-      justify-self: end; }
-    .footer-pagos .fac {
-      width: 50%;
-      display: flex;
-      justify-self: flex-start; }
-      .footer-pagos .fac img {
-        display: flex;
-        justify-content: space-around; }
   @keyframes load {
     0% { }
     20% {
@@ -1252,4 +1192,64 @@
       justify-content: center; }
   .main-login {
     grid-area: cont;
-    margin-top: 10%; } }
+    margin-top: 10%; }
+  .footer-index {
+    grid-area: footer-i;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    padding-bottom: 20%;
+    width: 90%;
+    color: black; }
+  .footer-inicio {
+    grid-area: footer-o;
+    margin-top: 1%;
+    position: static;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 5%; }
+    .footer-inicio .fac {
+      width: 30%;
+      display: flex;
+      justify-content: space-around; }
+  .footer-about {
+    grid-area: footer-a;
+    width: 100%;
+    margin-bottom: 6%;
+    background-color: #ffa322;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center; }
+    .footer-about h3 {
+      margin-top: 2%; }
+    .footer-about .footer-about-contact {
+      padding: 2%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly; }
+      .footer-about .footer-about-contact img {
+        width: 10%; }
+        .footer-about .footer-about-contact img:hover {
+          transform: scale(1.3);
+          transition: ease all 500ms; }
+  .footer-pagos {
+    grid-area: footer-2;
+    margin-top: 3rem;
+    background-color: #ffa322;
+    padding: 2%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: end; }
+    .footer-pagos .parrafooter {
+      display: flex;
+      justify-self: end; }
+    .footer-pagos .fac {
+      width: 50%;
+      display: flex;
+      justify-self: flex-start; }
+      .footer-pagos .fac img {
+        display: flex;
+        justify-content: space-around; } }

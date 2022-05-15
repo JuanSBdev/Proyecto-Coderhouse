@@ -1,0 +1,78 @@
+.footer-index{
+    grid-area: footer-i;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    padding-bottom: 20%;
+    width: 90%;
+    color:black
+}
+.footer-inicio{
+    grid-area: footer-o;
+    margin-top: 1%;
+    position:static;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 5%;
+    
+    .fac{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+}
+
+.footer-about{
+    grid-area: footer-a;
+    width: 100%;
+    margin-bottom: 6%;
+    background-color: map-get($colores, color2);
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+        h3{
+        margin-top: 2% ;
+        }
+        .footer-about-contact{
+            padding: 2%;
+            display: flex;
+            flex-flow: row nowrap;        
+            justify-content: space-evenly;
+                img{
+                    width: 10%;
+                    &:hover{
+                        transform: scale(1.3);
+                        transition: ease all 500ms;
+                    }
+                }
+        }
+    }
+    .footer-pagos{
+        grid-area: footer-2;
+        margin-top: 3rem;
+        background-color: map-get($colores, color2);
+        padding: 2%;
+        margin-bottom: 4%;
+        display: flex;
+        justify-content: end;
+        .parrafooter{
+            display: flex;
+            justify-self: end;
+        }
+        .fac{
+            width: 50%;
+
+            display: flex;
+            justify-self: flex-start;
+            img{
+                display: flex;
+                justify-content: space-around;
+    
+            }
+        }
+    }
