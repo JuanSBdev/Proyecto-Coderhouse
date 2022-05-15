@@ -3,15 +3,12 @@
     display: flex;
     justify-content: center;
     margin-top: 10%;
-    padding-bottom: 20%;
     width: 90%;
-    color:black;
-    p{
-    }
+    color:black
 }
 .footer-inicio{
     grid-area: footer-o;
-    margin-top: 1%;
+    margin-top: 6rem;
     position:static;
     display: flex;
     flex-flow: column nowrap;
