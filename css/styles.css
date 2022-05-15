@@ -843,6 +843,9 @@
       background: #ffde00;
       background: linear-gradient(50deg, #ffde00 25%, #ffaa00 80%, #ff9c00 87%, #ff9200 94%, #ff6f00 100%);
       list-style-type: none; }
+      .main-inicio .card1 ul {
+        list-style-type: none;
+        margin: 2%; }
       .main-inicio .card1 .oferta {
         display: flex;
         align-self: flex-start;
@@ -863,7 +866,9 @@
         display: flex;
         padding-top: 5%; }
       .main-inicio .card1 img {
-        width: 80%; }
+        width: 80%;
+        margin-top: -35%;
+        padding-bottom: 5%; }
     .main-inicio .card2 {
       grid-area: ca-2;
       width: 90%;
@@ -875,9 +880,12 @@
       flex-flow: row-reverse wrap;
       border: 2px solid black;
       border-radius: 1rem;
-      background: #6a003e;
-      background: linear-gradient(45deg, #6a003e 3%, #410575 26%, #3e1bdd 60%, #430287 82%, #870202 100%);
+      background: #cf2020;
+      background: linear-gradient(45deg, #cf2020 3%, #dd8500 50%, #e1421e 100%);
       list-style-type: none; }
+      .main-inicio .card2 ul {
+        list-style-type: none;
+        margin: 2%; }
       .main-inicio .card2 .burger2 {
         width: 100%;
         display: flex;
@@ -888,11 +896,14 @@
         display: flex;
         padding: 12%; }
       .main-inicio .card2 img {
-        width: 70%; }
+        width: 70%;
+        margin-top: -20%;
+        padding-bottom: 5%; }
     .main-inicio .card3 {
       grid-area: ca-3;
       width: 90%;
       padding: 2%;
+      padding-top: 10%;
       display: flex;
       flex-flow: column nowrap;
       position: relative;
@@ -902,19 +913,22 @@
       border-radius: 1rem;
       background: #35b989;
       background: linear-gradient(45deg, #35b989 10%, #32db51 65%, #197252 90%); }
+      .main-inicio .card3 ul {
+        list-style-type: none;
+        margin: 2%; }
       .main-inicio .card3 .burger3 {
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        padding: 12%;
-        list-style-type: none; }
+        padding: 12%; }
       .main-inicio .card3 .info-card3 {
         display: flex; }
       .main-inicio .card3 img {
-        width: 70%;
-        margin-top: -40%; }
+        width: 80%;
+        margin-top: -50%;
+        padding-bottom: 5%; }
     .main-inicio .card4 {
       grid-area: ca-4;
       width: 90%;
@@ -937,11 +951,13 @@
         align-items: center; }
       .main-inicio .card4 .info-card4 {
         padding: 5%;
+        margin: 2%;
         display: flex;
         list-style-type: none; }
       .main-inicio .card4 img {
         width: 70%;
-        margin-top: -40%; }
+        margin-top: -40%;
+        padding-bottom: 5%; }
   .main-about {
     padding-top: 0%;
     margin-top: 0%;
