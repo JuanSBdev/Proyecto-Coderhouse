@@ -159,7 +159,9 @@
         border: 2px solid black; }
   .main-inicio {
     grid-area: main;
-    width: 100%;
+    width: 90%;
+    border-radius: 1rem;
+    border: 2px solid black;
     display: grid;
     grid-template-areas: "ca-1 ca-2" "ca-3 ca-4";
     gap: 2%;
