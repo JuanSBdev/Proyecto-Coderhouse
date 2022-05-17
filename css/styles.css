@@ -383,7 +383,7 @@
       align-self: flex-end;
       margin-right: 10%;
       -webkit-animation: swing 1s ease;
-      animation: swing 3s ease;
+      animation: swing 2.5s ease;
       -webkit-animation-iteration-count: 10;
       animation-iteration-count: 2; }
     .main-about .section-1-about {
