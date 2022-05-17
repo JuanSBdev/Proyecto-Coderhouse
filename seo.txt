@@ -1,0 +1,9 @@
+Respecto a SEO se verificó que la validéz de los LINKS y REDIRECCIONES estén activas y funcionales.
+  Aunque aún hay lorems por quitar para esta entrega se trabajó en la correcta ORTOGRAFÍA del sitio.
+  Se mejoró también el posicionamiento de las ETIQUETAS html tal como vimos en clase las ETIQUETAS "h", solo un H1 por pág., posicionamiento, etc.
+  Se verificó para mejorar el seo la navegacion entre paginas sea la más conveniente.
+dentro del index.html se llama a las otras paginas dentro de "pages/ejemplo.html" tal como se explicó durante la clase.
+ A las imagenes se les aplicó el atributo "alt=" el cual mejora el seo. Por supuesto además de ayudar a personas con 
+visibilidad reducida o ante algun problema de carga de la imagen.
+También a las imagenes descargadas se les aplico una compresión.
+   
