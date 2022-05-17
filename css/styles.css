@@ -186,11 +186,14 @@
       background: #ffde00;
       background: linear-gradient(50deg, #ffde00 25%, #ffaa00 80%, #ff9c00 87%, #ff9200 94%, #ff6f00 100%); }
       .main-inicio .card1:hover {
+        grid-row-start: ca-1;
+        grid-row-end: ca-2;
         grid-column-start: ca-1;
         grid-column-end: ca-2;
-        position: block;
+        position: relative;
         width: 80%;
-        margin: 0%;
+        margin: 5%;
+        margin-left: 4%;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -202,12 +205,15 @@
         z-index: 1; }
         .main-inicio .card1:hover .info-card {
           display: block;
-          list-style: none; }
+          list-style: none;
+          padding: 5%; }
         .main-inicio .card1:hover .oferta {
           -webkit-animation: swing 2s ease;
           animation: swing 1s ease;
           -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1; }
+        .main-inicio .card1:hover img {
+          width: 80%; }
       .main-inicio .card1 .oferta {
         display: flex;
         align-self: flex-start;
@@ -258,6 +264,8 @@
         .main-inicio .card2:hover .info-card2 {
           list-style: none;
           display: block; }
+        .main-inicio .card2:hover img {
+          width: 80%; }
       .main-inicio .card2 .burger2 {
         width: 100%;
         display: flex;
@@ -267,7 +275,8 @@
       .main-inicio .card2 .info-card2 {
         display: none; }
       .main-inicio .card2 img {
-        width: 50%; }
+        width: 75%;
+        padding: 8%; }
     .main-inicio .card3 {
       grid-area: ca-3;
       width: 70%;
@@ -275,7 +284,6 @@
       padding: 2%;
       display: flex;
       flex-flow: column nowrap;
-      position: relative;
       align-items: center;
       align-content: center;
       border: 2px solid black;
@@ -283,18 +291,18 @@
       background: #35b989;
       background: linear-gradient(45deg, #35b989 10%, #32db51 65%, #197252 90%); }
       .main-inicio .card3:hover {
+        grid-row-start: ca-3;
+        grid-row-end: ca-4;
         grid-column-start: ca-3;
         grid-column-end: ca-4;
-        position: block;
         width: 80%;
-        margin: 0%;
+        margin: 5%;
         margin-left: 10%;
         display: flex;
         justify-content: center;
         align-content: center;
         align-items: center;
         flex-flow: row nowrap;
-        transform: scale(1.1);
         transition: all 500ms;
         backdrop-filter: blur(5px);
         overflow: hidden;
@@ -302,6 +310,8 @@
         .main-inicio .card3:hover .info-card3 {
           display: block;
           list-style: none; }
+          .main-inicio .card3:hover .info-card3 img {
+            width: 80%; }
       .main-inicio .card3 .burger3 {
         width: 100%;
         display: flex;
@@ -331,9 +341,9 @@
         grid-row-end: ca-4;
         grid-column-start: ca-3;
         grid-column-end: ca-4;
-        width: 80%;
+        width: 70%;
         margin: 5%;
-        margin-left: 10%;
+        margin-left: 4%;
         position: relative;
         display: flex;
         justify-content: center;
@@ -348,7 +358,7 @@
           list-style: none;
           display: block; }
         .main-inicio .card4:hover img {
-          width: 30%; }
+          width: 50%; }
       .main-inicio .card4 .burger4 {
         width: 100%;
         display: flex;
@@ -358,7 +368,9 @@
       .main-inicio .card4 .info-card4 {
         display: none; }
       .main-inicio .card4 img {
-        width: 50%; }
+        width: 55%;
+        margin-top: -10%;
+        padding: 2%; }
   .main-about {
     padding-top: 0%;
     margin-top: 0%;
