@@ -136,9 +136,9 @@
         flex-flow: column nowrap;
         border: 2px solid black;
         border-radius: 1rem; 
-        background:  rgb(106,0,62);
-        background: linear-gradient(45deg, rgba(106,0,62,1) 3%, rgba(65,5,117,1) 26%, rgba(62,27,221,1) 60%, rgba(67,2,135,1) 82%, rgba(135,2,2,1) 100%);
-
+        background: rgb(207,32,32);
+        background: linear-gradient(45deg, rgba(207,32,32,1) 3%, rgba(221,133,0,1) 50%, rgba(225,66,30,1) 100%);
+    
                 &:hover{
                     grid-row-start: ca-1;
                     grid-row-end: ca-2;

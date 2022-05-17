@@ -236,8 +236,8 @@
       flex-flow: column nowrap;
       border: 2px solid black;
       border-radius: 1rem;
-      background: #6a003e;
-      background: linear-gradient(45deg, #6a003e 3%, #410575 26%, #3e1bdd 60%, #430287 82%, #870202 100%); }
+      background: #cf2020;
+      background: linear-gradient(45deg, #cf2020 3%, #dd8500 50%, #e1421e 100%); }
       .main-inicio .card2:hover {
         grid-row-start: ca-1;
         grid-row-end: ca-2;
