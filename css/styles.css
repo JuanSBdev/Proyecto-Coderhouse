@@ -386,7 +386,8 @@
         grid-column-end: ca-4;
         width: 80%;
         margin: 5%;
-        margin-left: 10%;
+        margin-right: 5%;
+        padding-right: 5%;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -430,16 +431,15 @@
         grid-row-end: ca-4;
         grid-column-start: ca-3;
         grid-column-end: ca-4;
-        width: 70%;
+        width: 80%;
         margin: 5%;
-        margin-left: 4%;
+        margin-left: 6%;
         position: relative;
         display: flex;
         justify-content: center;
         align-content: center;
         align-items: center;
         flex-flow: row nowrap;
-        transform: scale(1.1);
         transition: all 500ms;
         z-index: 1;
         overflow: hidden; }
