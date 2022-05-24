@@ -1,0 +1,15 @@
+#Presupuesto para el sitio web. de JLSB para Delivery´s - CH.
+-Diseño-
+Se diseñará el sitio web, incluyendo las cinco páginas requeridas adecuadas a desktop y mobile.
+deberán aquí escojer la paleta de colores del sitio, se presentará un mockup del sitio y convendran los estilos con el cliente.
+
+-Desarrollo-
+Una vez definido el diseño del sitio y aprobado por el cliete se da paso a la fase de creación. Esta etapa incluirá la utilizacion de HTML5, CSS3, SASS, y Bootstrap. 
+así como también SEO Basic.
+
+-Plazo de entrega-
+El plazo de entrega estipulado es para el dia 17 de junio de 2022, a las 13Hs.
+Si bien habrá en el proceso etapas de supervisacion por parte del cliente.
+
+-precio-
+En este caso la página es para una ONG por lo cual el servicio se dona completamente ad honorem.
