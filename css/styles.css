@@ -44,7 +44,9 @@
 .body-index {
   width: 100%;
   display: grid;
-  grid-template-areas: "header-i" "main-i" "footer-i";
+  grid-template-areas: "header-i"
+ "main-i"
+ "footer-i";
   background-image: url("https://t4.ftcdn.net/jpg/04/77/41/49/360_F_477414972_fCT8rvCa1KxIq0g9p51GmcRiQhl2PSvi.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
@@ -52,7 +54,12 @@
 .body-inicio {
   width: 100%;
   display: grid;
-  grid-template-areas: "header-i" "txt" "main" "txt-2"  "carrosa" "footer-o";
+  grid-template-areas: "header-i"
+ "txt"
+ "main"
+ "txt-2" 
+ "carrosa"
+ "footer-o";
   gap: 2rem;
   background: #edfb3f;
   background: radial-gradient(circle, #edfb3f 0%, #fca446 95%, #fc4646 99%); }
@@ -60,17 +67,23 @@
 .body-about {
   width: 100%;
   display: grid;
-  grid-template-areas: "header-i" "main-a" "footer-a";
+  grid-template-areas: "header-i"
+ "main-a"
+ "footer-a";
   gap: 12rem; }
 
 .body-pagos {
   display: grid;
-  grid-template-areas: "header-i" "contenido" "footer-2";
+  grid-template-areas: "header-i"
+ "contenido"
+ "footer-2";
   width: 100%; }
 
 .body-login {
   display: grid;
-  grid-template-areas: "header-i" "cont" "footer-o";
+  grid-template-areas: "header-i"
+ "cont"
+ "footer-o";
   width: 100%; }
 
 .header-index {
@@ -252,7 +265,8 @@
     border-radius: 1rem;
     border: 2px solid black;
     display: grid;
-    grid-template-areas: "ca-1 ca-2" "ca-3 ca-4";
+    grid-template-areas: "ca-1 ca-2"
+ "ca-3 ca-4";
     gap: 2%;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2XBmGXjhP-DmvIv3Z9B_7LhUquAeP0C1Gw&usqp=CAU");
     background-repeat: cover;
@@ -483,6 +497,8 @@
       align-items: center;
       justify-content: center;
       background-color: #ffa322; }
+      .main-about .section-1-about p {
+        font-family: 'koulen'; }
       .main-about .section-1-about img {
         width: 60%;
         padding: 10%;
@@ -495,6 +511,9 @@
       align-items: center;
       justify-content: center;
       background-color: #fff; }
+      .main-about .section-2-about p {
+        margin: 2%;
+        font-family: 'koulen'; }
       .main-about .section-2-about img {
         width: 60%;
         padding: 10%;
@@ -725,7 +744,10 @@
     grid-area: main;
     width: 100%;
     display: grid;
-    grid-template-areas: "ca-1" "ca-2" "ca-3" " ca-4";
+    grid-template-areas: "ca-1"
+ "ca-2"
+ "ca-3"
+ " ca-4";
     gap: 2%;
     margin-top: 20%;
     padding-bottom: 40%;
@@ -895,7 +917,8 @@
   .main-pagos {
     display: grid;
     grid-area: contenido;
-    grid-template-areas: "productos " "pagos";
+    grid-template-areas: "productos "
+ "pagos";
     width: 100%; }
     .main-pagos .section-form-pagos {
       margin-top: 16%;

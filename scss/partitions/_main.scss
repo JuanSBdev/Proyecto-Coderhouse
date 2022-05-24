@@ -50,7 +50,8 @@
         border-radius: 1rem;
         border: 2px solid black;
         display: grid;
-        grid-template-areas: "ca-1 ca-2"
+        grid-template-areas:
+        "ca-1 ca-2"
         "ca-3 ca-4";
         gap: 2%;
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2XBmGXjhP-DmvIv3Z9B_7LhUquAeP0C1Gw&usqp=CAU");
@@ -60,6 +61,7 @@
         padding-top: 10%;
         overflow:visible;
 
+        
     .card1{
 
         grid-area: ca-1;
@@ -334,7 +336,10 @@
         align-items: center;
         justify-content: center;
         background-color: map-get($colores, color2);
-        
+            p{
+                font-family: 'koulen';
+
+            }
         img{
             width: 60%;
             padding: 10%;
@@ -349,6 +354,10 @@
         align-items: center;
         justify-content: center;
         background-color: #fff;
+        p{
+            margin: 2%;
+            font-family: 'koulen';
+        }
         img{
             width: 60%;
             padding: 10%;
