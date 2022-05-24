@@ -35,7 +35,9 @@
             justify-content: space-around;
             li{
                 a{
-                
+                    i{
+                        display: none;
+                    }
                     &:hover{
                         -webkit-animation: swing 1s ease;
                         animation: swing 1s ease;
