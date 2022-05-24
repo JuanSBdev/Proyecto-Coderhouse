@@ -44,9 +44,7 @@
 .body-index {
   width: 100%;
   display: grid;
-  grid-template-areas: "header-i"
- "main-i"
- "footer-i";
+  grid-template-areas: "header-i" "main-i" "footer-i";
   background-image: url("https://t4.ftcdn.net/jpg/04/77/41/49/360_F_477414972_fCT8rvCa1KxIq0g9p51GmcRiQhl2PSvi.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
@@ -54,12 +52,7 @@
 .body-inicio {
   width: 100%;
   display: grid;
-  grid-template-areas: "header-i"
- "txt"
- "main"
- "txt-2" 
- "carrosa"
- "footer-o";
+  grid-template-areas: "header-i" "txt" "main" "txt-2"  "carrosa" "footer-o";
   gap: 2rem;
   background: #edfb3f;
   background: radial-gradient(circle, #edfb3f 0%, #fca446 95%, #fc4646 99%); }
@@ -67,23 +60,17 @@
 .body-about {
   width: 100%;
   display: grid;
-  grid-template-areas: "header-i"
- "main-a"
- "footer-a";
+  grid-template-areas: "header-i" "main-a" "footer-a";
   gap: 12rem; }
 
 .body-pagos {
   display: grid;
-  grid-template-areas: "header-i"
- "contenido"
- "footer-2";
+  grid-template-areas: "header-i" "contenido" "footer-2";
   width: 100%; }
 
 .body-login {
   display: grid;
-  grid-template-areas: "header-i"
- "cont"
- "footer-o";
+  grid-template-areas: "header-i" "cont" "footer-o";
   width: 100%; }
 
 .header-index {
@@ -97,6 +84,7 @@
   z-index: 3;
   filter: drop-shadow(1px 10px 6px #1c1a0895); }
   .header-index img {
+    display: inline-block;
     width: 16%;
     -webkit-animation: rotation 2s ease;
     animation: rotation 1s ease;
@@ -106,17 +94,26 @@
     display: flex;
     flex-flow: row-reverse nowrap; }
     .header-index nav ul {
-      width: 40%;
+      width: 20%;
       list-style-type: none;
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
       justify-content: space-around; }
+      .header-index nav ul li a i {
+        display: flex;
+        flex-flow: row wrap; }
       .header-index nav ul li a:hover {
         -webkit-animation: swing 1s ease;
         animation: swing 1s ease;
         -webkit-animation-iteration-count: 1;
         animation-iteration-count: 1; }
+        .header-index nav ul li a:hover i {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          overflow: hidden;
+          position: initial; }
 
 @media screen and (max-width: 765px) {
   .header-index {
@@ -265,8 +262,7 @@
     border-radius: 1rem;
     border: 2px solid black;
     display: grid;
-    grid-template-areas: "ca-1 ca-2"
- "ca-3 ca-4";
+    grid-template-areas: "ca-1 ca-2" "ca-3 ca-4";
     gap: 2%;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2XBmGXjhP-DmvIv3Z9B_7LhUquAeP0C1Gw&usqp=CAU");
     background-repeat: cover;
@@ -744,10 +740,7 @@
     grid-area: main;
     width: 100%;
     display: grid;
-    grid-template-areas: "ca-1"
- "ca-2"
- "ca-3"
- " ca-4";
+    grid-template-areas: "ca-1" "ca-2" "ca-3" " ca-4";
     gap: 2%;
     margin-top: 20%;
     padding-bottom: 40%;
@@ -917,8 +910,7 @@
   .main-pagos {
     display: grid;
     grid-area: contenido;
-    grid-template-areas: "productos "
- "pagos";
+    grid-template-areas: "productos " "pagos";
     width: 100%; }
     .main-pagos .section-form-pagos {
       margin-top: 16%;

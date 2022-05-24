@@ -12,8 +12,8 @@
     justify-content: center;
     z-index: 3;
     filter: drop-shadow(1px 10px 6px #1c1a0895);
-    
     img{
+        display:inline-block;
         width: 16%;
         -webkit-animation: rotation 2s ease;
         animation: rotation 1s ease;
@@ -27,7 +27,7 @@
         flex-flow: row-reverse nowrap;
 
         ul{
-            width: 40%;
+            width: 20%;
             list-style-type: none;
             display: flex;
             flex-flow: row nowrap;
@@ -36,13 +36,27 @@
             li{
                 a{
                     i{
-                        display: none;
+                        display: flex;
+                        flex-flow: row wrap;
                     }
                     &:hover{
                         -webkit-animation: swing 1s ease;
                         animation: swing 1s ease;
                         -webkit-animation-iteration-count: 1;
-                        animation-iteration-count: 1;                    }
+                        animation-iteration-count: 1;     
+
+                    i{
+                        display:flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        overflow: hidden;
+
+                        position:initial;
+
+
+
+                    }
+                    }
                 }
             }
         }
