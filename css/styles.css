@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Pattaya&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 @keyframes swing {
   15% {
@@ -230,7 +231,9 @@
     justify-content: center;
     align-items: center; }
     .main-index .titulo {
-      padding: 10%; }
+      font-family: 'Pattaya';
+      padding: 10%;
+      font-family: 'Pattaya'; }
       .main-index .titulo h1 {
         font-size: 6rem; }
     .main-index .buscador {
@@ -257,6 +260,7 @@
         background-color: #ffa322;
         border: 2px solid black; }
   .main-inicio {
+    font-family: 'Koulen', cursive;
     grid-area: main;
     width: 90%;
     border-radius: 1rem;
@@ -280,7 +284,7 @@
       position: relative;
       align-items: center;
       align-content: center;
-      border: 2px solid #564f1d84;
+      border: 2px solid black;
       border-radius: 1rem;
       background: #ffde00;
       background: linear-gradient(50deg, #ffde00 25%, #ffaa00 80%, #ff9c00 87%, #ff9200 94%, #ff6f00 100%); }
