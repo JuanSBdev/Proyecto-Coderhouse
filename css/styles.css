@@ -258,7 +258,8 @@
         color: black; }
       .main-index .buscador .boton-buscador {
         background-color: #ffa322;
-        border: 2px solid black; }
+        border: 2px solid black;
+        font-family: fantasy; }
   .main-inicio {
     font-family: 'Koulen', cursive;
     grid-area: main;
